@@ -1,4 +1,5 @@
 {# Badges partial template - renders skill, difficulty, and maturity badges #}
+{# Skill badges - pill shaped, inline #}
 {% if page.taxonomies and page.taxonomies.skill %}
     {% for skill in page.taxonomies.skill %}
         {% set skill_lower = skill | lower %}
@@ -10,24 +11,41 @@
     {% endfor %}
 {% endif %}
 
-{% if page.taxonomies and page.taxonomies.difficulty %}
-    {% for difficulty in page.taxonomies.difficulty %}
-        {% set diff_lower = difficulty | lower %}
-        <span
-            class="px-3 py-1 rounded-full text-xs font-medium text-white badge-difficulty"
-            style="background-color: {{ config.extra.badge_colors.difficulty[diff_lower] | default(value="#10b981") }};"
-            data-difficulty="{{ difficulty | lower }}"
-        >{{ difficulty }}</span>
-    {% endfor %}
-{% endif %}
+{# Difficulty and maturity badges - shields.io style on separate row #}
+{% if page.taxonomies and (page.taxonomies.difficulty or page.taxonomies.maturity) %}
+<div class="flex flex-wrap gap-2 mt-2">
+    {# Difficulty badges #}
+    {% if page.taxonomies and page.taxonomies.difficulty %}
+        {% for difficulty in page.taxonomies.difficulty %}
+            {% set diff_lower = difficulty | lower %}
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-800 text-slate-300 border border-slate-600 badge-difficulty"
+                data-difficulty="{{ difficulty | lower }}"
+            >
+                <span class="text-slate-400 mr-1.5">difficulty:</span>
+                <span
+                    class="text-white font-semibold"
+                    style="color: {{ config.extra.badge_colors.difficulty[diff_lower] | default(value="#10b981") }};"
+                >{{ difficulty }}</span>
+            </span>
+        {% endfor %}
+    {% endif %}
 
-{% if page.taxonomies and page.taxonomies.maturity %}
-    {% for maturity in page.taxonomies.maturity %}
-        {% set mat_lower = maturity | lower %}
-        <span
-            class="px-3 py-1 rounded-full text-xs font-medium text-white badge-maturity"
-            style="background-color: {{ config.extra.badge_colors.maturity[mat_lower] | default(value="#2563eb") }};"
-            data-maturity="{{ maturity | lower }}"
-        >{{ maturity }}</span>
-    {% endfor %}
+    {# Maturity badges #}
+    {% if page.taxonomies and page.taxonomies.maturity %}
+        {% for maturity in page.taxonomies.maturity %}
+            {% set mat_lower = maturity | lower %}
+            <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-800 text-slate-300 border border-slate-600 badge-maturity"
+                data-maturity="{{ maturity | lower }}"
+            >
+                <span class="text-slate-400 mr-1.5">maturity:</span>
+                <span
+                    class="text-white font-semibold"
+                    style="color: {{ config.extra.badge_colors.maturity[mat_lower] | default(value="#2563eb") }};"
+                >{{ maturity }}</span>
+            </span>
+        {% endfor %}
+    {% endif %}
+</div>
 {% endif %}

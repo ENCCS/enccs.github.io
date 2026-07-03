@@ -11,27 +11,27 @@
         <label class="text-sm font-medium text-slate-400">Skill:</label>
         <select id="filter-skill" class="bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
             <option value="">All</option>
-            <option value="ai">AI</option>
-            <option value="data">Data</option>
-            <option value="programming">Programming</option>
+            {% for skill, color in config.extra.badge_colors.skill %}
+            <option value="{{ skill }}">{{ skill | replace(from="_", to=" ") | title }}</option>
+            {% endfor %}
         </select>
     </div>
     <div class="flex flex-col gap-1">
         <label class="text-sm font-medium text-slate-400">Difficulty:</label>
         <select id="filter-difficulty" class="bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
             <option value="">All</option>
-            <option value="beginner">Beginner</option>
-            <option value="intermediate">Intermediate</option>
-            <option value="advanced">Advanced</option>
+            {% for level, color in config.extra.badge_colors.difficulty %}
+            <option value="{{ level }}">{{ level | replace(from="_", to=" ") | title }}</option>
+            {% endfor %}
         </select>
     </div>
     <div class="flex flex-col gap-1">
         <label class="text-sm font-medium text-slate-400">Maturity:</label>
         <select id="filter-maturity" class="bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
             <option value="">All</option>
-            <option value="alpha">Alpha</option>
-            <option value="beta">Beta</option>
-            <option value="stable">Stable</option>
+            {% for status, color in config.extra.badge_colors.maturity %}
+            <option value="{{ status }}">{{ status | replace(from="_", to=" ") | title }}</option>
+            {% endfor %}
         </select>
     </div>
     <div class="flex flex-col gap-1 flex-grow min-w-[200px]">
@@ -55,7 +55,7 @@
 
 <!-- Lesson Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="lesson-grid">
-    {% for page in section.pages %}
+    {% for page in section.pages | sort(attribute="title") %}
     <a href="{{ page.permalink | safe }}" class="block no-underline group">
         <article
             class="bg-[#122855] border border-slate-700 rounded-xl p-6 group-hover:border-slate-600 group-hover:shadow-lg group-hover:shadow-slate-400/20 transition-all duration-200 h-full"

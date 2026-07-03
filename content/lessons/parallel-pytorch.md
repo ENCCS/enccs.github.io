@@ -3,7 +3,7 @@ title = "Parallel PyTorch"
 description = "Learn parallel computing techniques with PyTorch for distributed training across multiple GPUs."
 
 [taxonomies]
-skill = ["pytorch", "parallel_computing", "ai"]
+skill = ["ai", "hpc", "pytorch"]
 difficulty = ["intermediate"]
 maturity = ["alpha"]
 

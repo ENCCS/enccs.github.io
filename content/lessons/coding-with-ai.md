@@ -3,7 +3,7 @@ title = "Responsible Use of Generative AI in Assisted Coding"
 description = "A practical framework for researchers who want to use AI coding assistants responsibly. Covers three scenarios of increasing automation: chat-based coding, IDE integration, and full agentic code development."
 
 [taxonomies]
-skill = ["ai", "coding", "programming"]
+skill = ["ai", "gen_ai", "programming"]
 difficulty = ["beginner"]
 maturity = ["beta"]
 

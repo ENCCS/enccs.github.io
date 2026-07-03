@@ -3,7 +3,7 @@ title = "CASTIEL2 Multi-GPU AI Train the Trainer Workshop"
 description = "5-day workshop covering multi-GPU AI training, including PyTorch Distributed Data Parallel, model parallelism, PyTorch Lightning, fine-tuning neural networks, computer vision, MLOps on HPC, Ray, RAG, and hyperparameter tuning."
 
 [taxonomies]
-skill = ["ai", "gpu", "hpc", "pytorch", "distributed_computing"]
+skill = ["ai", "hpc", "pytorch"]
 difficulty = ["advanced"]
 maturity = ["beta"]
 

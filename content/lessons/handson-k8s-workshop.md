@@ -3,7 +3,7 @@ title = "Hands-on Kubernetes Workshop"
 description = "Materials for the Kubernetes workshop @ MIMER / ENCCS. Learn to deploy and manage containerized applications on Kubernetes."
 
 [taxonomies]
-skill = ["kubernetes", "containers", "devops", "cloud"]
+skill = ["cloud_computing", "devops"]
 difficulty = ["intermediate"]
 maturity = ["beta"]
 

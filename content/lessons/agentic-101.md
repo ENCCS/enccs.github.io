@@ -3,7 +3,7 @@ title = "Introduction to Agentic Coding"
 description = "Introduction into agentic coding, agent harnesses, context management, tool-calling, MCP, and ACP."
 
 [taxonomies]
-skill = ["ai", "agentic", "programming"]
+skill = ["ai", "agentic", "gen_ai", "programming"]
 difficulty = ["advanced"]
 maturity = ["alpha"]
 

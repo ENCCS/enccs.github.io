@@ -3,7 +3,7 @@ title = "Generative AI for Life Science"
 description = "Learn about generative AI applications in life sciences, including cell fate prediction with autoencoders, protein language models, and vision language models for medical imaging."
 
 [taxonomies]
-skill = ["ai", "life_science", "machine_learning"]
+skill = ["ai", "gen_ai", "life_science", "machine_learning"]
 difficulty = ["intermediate"]
 maturity = ["alpha"]
 

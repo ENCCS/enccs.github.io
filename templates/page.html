@@ -9,6 +9,11 @@
         {% include "partials/badges.html" %}
     </div>
 
+    {# Display page content #}
+    <div class="prose dark:prose-invert max-w-4xl mx-auto mb-12 text-left">
+        {{ page.content | safe }}
+    </div>
+
     <a
         href="{{ page.extra.external_url | default(value="#") | safe }}"
         class="inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition-colors text-lg"

@@ -25,3 +25,5 @@ This 5-day train-the-trainer workshop covers:
 - Hyperparameter tuning
 
 The course is designed for scientists, engineers, and PhD students who need to scale AI models efficiently or optimize distributed training workflows.
+
+{{ youtube(id="nBOXsbPyWxg", playlist="PL6I5OWh2pdwTfkyY3xPWpJoUNPFKDdJxZ") }}

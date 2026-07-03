@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://learn.mimer-ai.eu/sitemap.xml

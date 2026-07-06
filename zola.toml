@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://learn.mimer-ai.eu"
+base_url = "https://enccs.se"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -11,6 +11,7 @@ taxonomies = [
     { name = "skill", feed = false, render = false },
     { name = "difficulty", feed = false, render = false },
     { name = "maturity", feed = false, render = false },
+    { name = "category", feed = false, render = false },
 ]
 
 [markdown]
@@ -26,19 +27,32 @@ index_format = "fuse_javascript" # or "fuse_json"
 # Define badge colors for Skill, Difficulty Level, and Maturity
 badge_colors = {
     skill = {
-        ai = "bg-indigo-700",
-        gen_ai = "bg-pink-500",
-        hpc = "bg-orange-700",
-        cloud_computing = "bg-sky-700",
-        programming = "bg-violet-700",
-        julia = "bg-purple-700",
-        data_science = "bg-cyan-700",
-        life_science = "bg-emerald-700",
-        machine_learning = "bg-pink-600",
-        mlops = "bg-violet-700",
-        agentic = "bg-indigo-700",
-        pytorch = "bg-orange-700",
-        devops = "bg-teal-600"
+        hpc = "bg-blue-500",
+        ai = "bg-cyan-500",
+        programming = "bg-orange-500",
+        gpu = "bg-purple-500",
+        cpu = "bg-green-500",
+        molecular_dynamics = "bg-pink-500",
+        electronic_structure = "bg-indigo-500",
+        quantum_computing = "bg-violet-500",
+        computational_fluid_dynamics = "bg-teal-500",
+        plasma_physics = "bg-rose-500",
+        programming_tools = "bg-amber-500",
+        instructor_training = "bg-slate-500"
+    },
+    category = {
+        basics_of_hpc = "bg-blue-600",
+        ai = "bg-cyan-600",
+        gpu_programming = "bg-purple-600",
+        cpu_programming = "bg-green-600",
+        molecular_dynamics = "bg-pink-600",
+        electronic_structure_calculations = "bg-indigo-600",
+        quantum_computing = "bg-violet-600",
+        computational_fluid_dynamics = "bg-teal-600",
+        plasma_physics = "bg-rose-600",
+        programming_tools = "bg-amber-600",
+        high_level_language_programming = "bg-orange-600",
+        instructor_training_program = "bg-slate-600"
     },
     difficulty = { beginner = "text-emerald-400", intermediate = "text-amber-400", advanced = "text-red-400" },
     maturity = { alpha = "text-sky-400", beta = "text-blue-400", stable = "text-blue-500" }
@@ -46,17 +60,17 @@ badge_colors = {
 
 # Navigation configuration
 [extra.nav]
-logo_src = "https://mimer-ai.eu/wp-content/uploads/2025/09/Mimer_white_logo-scaled.png"
-logo_alt = "The logo of Mimer AI Factory. Straight modern white lines, with one blue line in the second M."
-logo_url = "https://mimer-ai.eu"
-library_text = "Library"
+logo_src = "https://media.enccs.se/2022/12/ENCCS-Logo-Horizontal-Colour-low-res-323.png"
+logo_alt = "ENCCS - EuroCC National Competence Centre Sweden logo"
+logo_url = "https://enccs.se"
+library_text = "Lesson Library"
 library_url = "/"
-get_access_url = "https://mimer-ai.eu/all-services/access-to-compute-resources/"
+get_access_url = "https://enccs.se/all-services/"
 
 # Main header navigation links
 [[extra.nav.main_links]]
-name = "Events & Learning"
-url = "https://mimer-ai.eu/events-and-learning"
+name = "Events"
+url = "https://enccs.se/events/"
 
 [[extra.nav.main_links]]
 name = "Services"
@@ -65,39 +79,19 @@ dropdown = true
 
 [[extra.nav.main_links.sub_links]]
 name = "All services"
-url = "https://mimer-ai.eu/all-services/"
+url = "https://enccs.se/all-services/"
 
 [[extra.nav.main_links.sub_links]]
 name = "Expert support"
-url = "https://mimer-ai.eu/all-services/expert-support/"
-
-[[extra.nav.main_links.sub_links]]
-name = "Trustworthy AI"
-url = "https://mimer-ai.eu/all-services/trustworthy-ai/"
+url = "https://enccs.se/all-services/expert-support/"
 
 [[extra.nav.main_links.sub_links]]
 name = "Access to compute resources"
-url = "https://mimer-ai.eu/all-services/access-to-compute-resources/"
-
-[[extra.nav.main_links.sub_links]]
-name = "Data access and management"
-url = "https://mimer-ai.eu/all-services/data-access-and-management/"
+url = "https://enccs.se/all-services/access-to-compute-resources/"
 
 [[extra.nav.main_links.sub_links]]
 name = "Training and upskilling"
-url = "https://mimer-ai.eu/all-services/training-and-upskilling/"
-
-[[extra.nav.main_links.sub_links]]
-name = "Ecosystem services"
-url = "https://mimer-ai.eu/all-services/ecosystem-services/"
-
-[[extra.nav.main_links]]
-name = "Client stories"
-url = "https://mimer-ai.eu/client-stories/"
-
-[[extra.nav.main_links]]
-name = "News & blog"
-url = "https://mimer-ai.eu/news-and-blog/"
+url = "https://enccs.se/all-services/training/"
 
 [[extra.nav.main_links]]
 name = "About"
@@ -105,53 +99,37 @@ url = "#"
 dropdown = true
 
 [[extra.nav.main_links.sub_links]]
-name = "About Mimer"
-url = "https://mimer-ai.eu/about/about-mimer/"
+name = "About ENCCS"
+url = "https://enccs.se/about/"
 
 [[extra.nav.main_links.sub_links]]
-name = "Careers"
-url = "https://mimer-ai.eu/about/careers/"
-
-[[extra.nav.main_links.sub_links]]
-name = "Ecosystem"
-url = "https://mimer-ai.eu/about/ecosystem/"
-
-[[extra.nav.main_links.sub_links]]
-name = "FAQ"
-url = "https://mimer-ai.eu/about/faq/"
-
-[[extra.nav.main_links.sub_links]]
-name = "Brand assets"
-url = "https://mimer-ai.eu/about/brand-assets/"
+name = "Contact us"
+url = "https://enccs.se/contact/"
 
 [[extra.nav.main_links]]
-name = "Contact us"
-url = "https://mimer-ai.eu/contact-us/"
+name = "Lessons"
+url = "/lessons/"
 
 # Footer configuration
 [extra.footer]
 quick_links_title = "Quick links"
 
 [[extra.footer.quick_links]]
-name = "About Mimer"
-url = "https://mimer-ai.eu/about/about-mimer/"
-
-[[extra.footer.quick_links]]
-name = "Careers"
-url = "https://mimer-ai.eu/about/careers/"
+name = "About ENCCS"
+url = "https://enccs.se/about/"
 
 [[extra.footer.quick_links]]
 name = "Contact us"
-url = "https://mimer-ai.eu/contact-us/"
+url = "https://enccs.se/contact/"
 
 [[extra.footer.quick_links]]
-name = "Events and learning"
-url = "https://mimer-ai.eu/events-and-learning"
+name = "Events"
+url = "https://enccs.se/events/"
 
 [[extra.footer.quick_links]]
 name = "All services"
-url = "https://mimer-ai.eu/all-services/"
+url = "https://enccs.se/all-services/"
 
 [[extra.footer.quick_links]]
 name = "Privacy Policy"
-url = "https://mimer-ai.eu/privacy-policy/"
+url = "https://enccs.se/privacy-policy/"

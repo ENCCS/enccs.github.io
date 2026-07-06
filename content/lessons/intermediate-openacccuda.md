@@ -1,12 +1,11 @@
 +++
 title = "Intermediate OpenACC/CUDA"
-description = "Intermediate OpenACC/CUDA - ENCCS Lesson"
+description = "Intermediate concepts in OpenACC and CUDA."
 
 [taxonomies]
-skill = ["gpu"]
 difficulty = ["intermediate"]
 maturity = ["stable"]
-category = ["gpu-programming"]
+category = ["gpu_programming"]
 
 [extra]
 tags = []
@@ -15,7 +14,7 @@ external_url = "https://enccs.github.io/OpenACC-CUDA-intermediate/"
 
 ## Overview
 
-Intermediate OpenACC/CUDA lesson material from ENCCS.
+This course is for students, researchers, engineers and programmers who would like to expand their knowledge of OpenACC and CUDA. Some previous experience with C/C++ is required, basic knowledge of OpenACC/CUDA will help to follow the material.
 
 ## Learn More
 

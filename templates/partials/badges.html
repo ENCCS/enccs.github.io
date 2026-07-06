@@ -1,23 +1,18 @@
-{# Badges partial template - renders skill, difficulty, maturity, and category badges #}
-{# Skill badges - rounded rectangles, inline #}
-{% if page.taxonomies and page.taxonomies.skill %}
-    {% for skill in page.taxonomies.skill %}
-        {% set skill_lower = skill | lower %}
-        <span
-            class="px-3 py-1 rounded-md text-xs font-medium text-white {{ config.extra.badge_colors.skill[skill_lower] | default(value="bg-indigo-700") }} badge-skill"
-            data-skill="{{ skill | lower }}"
-        >{{ skill }}</span>
-    {% endfor %}
-{% endif %}
-
+{# Badges partial template - renders category, difficulty, and maturity badges #}
 {# Category badges #}
 {% if page.taxonomies and page.taxonomies.category %}
     {% for category in page.taxonomies.category %}
         {% set category_lower = category | lower %}
+        {% set bg_color = config.extra.badge_colors.category[category_lower] | default(value="bg-[#2A2B31]") %}
+        {% if "#FFC107" in bg_color or "#00d084" in bg_color %}
+            {% set text_color = "text-[#2A2B31]" %}
+        {% else %}
+            {% set text_color = "text-white" %}
+        {% endif %}
         <span
-            class="px-3 py-1 rounded-md text-xs font-medium text-white {{ config.extra.badge_colors.category[category_lower] | default(value="bg-slate-600") }} badge-category"
+            class="px-3 py-1 rounded-md text-xs font-medium {{ text_color }} {{ bg_color }} badge-category"
             data-category="{{ category | lower }}"
-        >{{ category | replace(from="-", to=" ") | title }}</span>
+        >{{ config.extra.category_names[category_lower] | default(value=category | replace(from="_", to=" ") | replace(from="-", to=" ") | title) }}</span>
     {% endfor %}
 {% endif %}
 
@@ -28,14 +23,18 @@
     {% if page.taxonomies and page.taxonomies.difficulty %}
         {% for difficulty in page.taxonomies.difficulty %}
             {% set diff_lower = difficulty | lower %}
+            {% set bg_color = config.extra.badge_colors.difficulty[diff_lower] | default(value="bg-[#2A2B31]") %}
+            {% if "#FFC107" in bg_color or "#00d084" in bg_color %}
+                {% set text_color = "text-[#2A2B31]" %}
+            {% else %}
+                {% set text_color = "text-white" %}
+            {% endif %}
             <span
-                class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-800 text-slate-300 border border-slate-600 badge-difficulty"
+                class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium {{ text_color }} {{ bg_color }} badge-difficulty"
                 data-difficulty="{{ difficulty | lower }}"
             >
-                <span class="text-slate-400 mr-1.5">difficulty:</span>
-                <span
-                    class="font-semibold {{ config.extra.badge_colors.difficulty[diff_lower] | default(value="text-emerald-400") }}"
-                >{{ difficulty }}</span>
+                <span class="mr-1.5 opacity-75">difficulty:</span>
+                <span class="font-semibold">{{ difficulty }}</span>
             </span>
         {% endfor %}
     {% endif %}
@@ -44,14 +43,18 @@
     {% if page.taxonomies and page.taxonomies.maturity %}
         {% for maturity in page.taxonomies.maturity %}
             {% set mat_lower = maturity | lower %}
+            {% set bg_color = config.extra.badge_colors.maturity[mat_lower] | default(value="bg-[#2A2B31]") %}
+            {% if "#FFC107" in bg_color or "#00d084" in bg_color %}
+                {% set text_color = "text-[#2A2B31]" %}
+            {% else %}
+                {% set text_color = "text-white" %}
+            {% endif %}
             <span
-                class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-800 text-slate-300 border border-slate-600 badge-maturity"
+                class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium {{ text_color }} {{ bg_color }} badge-maturity"
                 data-maturity="{{ maturity | lower }}"
             >
-                <span class="text-slate-400 mr-1.5">maturity:</span>
-                <span
-                    class="font-semibold {{ config.extra.badge_colors.maturity[mat_lower] | default(value="text-blue-500") }}"
-                >{{ maturity }}</span>
+                <span class="mr-1.5 opacity-75">maturity:</span>
+                <span class="font-semibold">{{ maturity }}</span>
             </span>
         {% endfor %}
     {% endif %}

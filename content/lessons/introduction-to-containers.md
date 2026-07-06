@@ -1,12 +1,11 @@
 +++
 title = "Introduction to containers"
-description = "Introduction to containers - ENCCS Lesson"
+description = "This material aims at researchers and developers who have experience working with AI and wish to train their applications on supercomputers."
 
 [taxonomies]
-skill = ["hpc"]
 difficulty = ["beginner"]
 maturity = ["stable"]
-category = ["basics-of-hpc"]
+category = ["basics_of_hpc"]
 
 [extra]
 tags = []
@@ -15,7 +14,7 @@ external_url = "https://enccs.github.io/containers/"
 
 ## Overview
 
-Introduction to containers lesson material from ENCCS.
+This material is meant for researchers and scientists who need controlled environments for running their applications and AI practitioners who wish to train their networks on HPC systems.
 
 ## Learn More
 

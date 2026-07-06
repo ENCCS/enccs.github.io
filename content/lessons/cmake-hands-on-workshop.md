@@ -1,12 +1,11 @@
 +++
 title = "CMake hands-on workshop"
-description = "CMake hands-on workshop - ENCCS Lesson"
+description = "Learn how to use CMake as a build tool for your projects through a hands-on workshop!"
 
 [taxonomies]
-skill = ["programming_tools"]
 difficulty = ["intermediate"]
 maturity = ["stable"]
-category = ["programming-tools"]
+category = ["programming_tools"]
 
 [extra]
 tags = []
@@ -15,7 +14,7 @@ external_url = "https://enccs.github.io/cmake-workshop/"
 
 ## Overview
 
-CMake hands-on workshop lesson material from ENCCS.
+This course is for students, researchers, engineers, and programmers that have heard of CMake and want to learn how to use it effectively with projects they are working on. This course assumes no previous experience with CMake.
 
 ## Learn More
 

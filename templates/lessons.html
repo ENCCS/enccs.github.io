@@ -1,24 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="mb-8">
-    <h1 class="text-3xl font-bold text-white mb-2">{{ section.title | default(value="Lessons") }}</h1>
-    <p class="text-slate-400">{{ section.content | safe | default(value="Browse our collection of HPC and AI learning materials") }}</p>
+    <h1 class="text-3xl font-bold text-[#2A2B31] mb-2">{{ section.title | default(value="Lessons") }}</h1>
+    <div class="text-gray-600">{{ section.content | markdown | safe }}</div>
 </div>
 
 <!-- Filters -->
-<div class="flex flex-wrap gap-4 mb-8 p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+<div class="flex flex-wrap gap-4 mb-8 p-4 bg-[#2A2B31] rounded-xl border border-[#2A2B31]">
     <div class="flex flex-col gap-1">
-        <label class="text-sm font-medium text-slate-400">Skill:</label>
-        <select id="filter-skill" class="bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+        <label class="text-sm font-medium text-white">Category:</label>
+        <select id="filter-category" class="bg-white border border-gray-300 rounded-lg px-3 py-2 text-[#2A2B31] focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent">
             <option value="">All</option>
-            {% for skill, color in config.extra.badge_colors.skill %}
-            <option value="{{ skill }}">{{ skill | replace(from="_", to=" ") | title }}</option>
+            {% for category, color in config.extra.badge_colors.category %}
+            <option value="{{ category }}">{{ config.extra.category_names[category] | default(value=category | replace(from="_", to=" ") | title) }}</option>
             {% endfor %}
         </select>
     </div>
     <div class="flex flex-col gap-1">
-        <label class="text-sm font-medium text-slate-400">Difficulty:</label>
-        <select id="filter-difficulty" class="bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+        <label class="text-sm font-medium text-white">Difficulty:</label>
+        <select id="filter-difficulty" class="bg-white border border-gray-300 rounded-lg px-3 py-2 text-[#2A2B31] focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent">
             <option value="">All</option>
             {% for level, color in config.extra.badge_colors.difficulty %}
             <option value="{{ level }}">{{ level | replace(from="_", to=" ") | title }}</option>
@@ -26,36 +26,27 @@
         </select>
     </div>
     <div class="flex flex-col gap-1">
-        <label class="text-sm font-medium text-slate-400">Maturity:</label>
-        <select id="filter-maturity" class="bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+        <label class="text-sm font-medium text-white">Maturity:</label>
+        <select id="filter-maturity" class="bg-white border border-gray-300 rounded-lg px-3 py-2 text-[#2A2B31] focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent">
             <option value="">All</option>
             {% for status, color in config.extra.badge_colors.maturity %}
             <option value="{{ status }}">{{ status | replace(from="_", to=" ") | title }}</option>
             {% endfor %}
         </select>
     </div>
-    <div class="flex flex-col gap-1">
-        <label class="text-sm font-medium text-slate-400">Category:</label>
-        <select id="filter-category" class="bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
-            <option value="">All</option>
-            {% for category, color in config.extra.badge_colors.category %}
-            <option value="{{ category }}">{{ category | replace(from="_", to=" ") | title }}</option>
-            {% endfor %}
-        </select>
-    </div>
     <div class="flex flex-col gap-1 flex-grow min-w-[200px]">
-        <label class="text-sm font-medium text-slate-400">Search:</label>
+        <label class="text-sm font-medium text-white">Search:</label>
         <input
             id="filter-search"
             type="text"
             placeholder="Search lessons..."
-            class="bg-slate-800 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent w-full"
+            class="bg-white border border-gray-300 rounded-lg px-3 py-2 text-[#2A2B31] focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:border-transparent w-full"
         >
     </div>
     <div class="flex items-end">
         <button
             id="clear-filters"
-            class="bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+            class="bg-[#FFC107] hover:bg-[#E0A800] text-[#2A2B31] px-4 py-2 rounded-lg text-sm font-medium transition-colors"
         >
             Clear Filters
         </button>
@@ -67,12 +58,12 @@
     {% for page in section.pages | sort(attribute="title") %}
     <a href="{{ page.permalink | safe }}" class="block no-underline group">
         <article
-            class="bg-[#122855] border border-slate-700 rounded-xl p-6 group-hover:border-slate-600 group-hover:shadow-lg group-hover:shadow-slate-400/20 transition-all duration-200 h-full"
+            class="bg-white border border-gray-200 rounded-xl p-6 group-hover:border-[#FFC107] group-hover:shadow-lg group-hover:shadow-[#FFC107]/20 transition-all duration-200 h-full"
             data-title="{{ page.title }}"
             data-description="{{ page.description | default(value="") }}"
         >
-            <h2 class="text-xl font-semibold text-white mb-3 group-hover:text-indigo-400 transition-colors">{{ page.title }}</h2>
-            <p class="text-slate-400 mb-4">{{ page.description | default(value="No description available") }}</p>
+            <h2 class="text-xl font-semibold text-[#2A2B31] mb-3 group-hover:text-[#FFC107] transition-colors">{{ page.title }}</h2>
+            <p class="text-gray-600 mb-4">{{ page.description | default(value="No description available") }}</p>
             <div class="flex flex-wrap gap-2">
                 {% include "partials/badges.html" %}
             </div>
@@ -84,30 +75,27 @@
 <script>
 // Client-side filtering that checks badge data attributes and text search
 function filterLessons() {
-    const skillFilter = document.getElementById('filter-skill').value.toLowerCase();
+    const categoryFilter = document.getElementById('filter-category').value.toLowerCase();
     const difficultyFilter = document.getElementById('filter-difficulty').value.toLowerCase();
     const maturityFilter = document.getElementById('filter-maturity').value.toLowerCase();
-    const categoryFilter = document.getElementById('filter-category').value.toLowerCase();
     const searchQuery = document.getElementById('filter-search').value.toLowerCase();
     const lessons = document.querySelectorAll('#lesson-grid article');
 
     lessons.forEach(lesson => {
-        let skillMatch = !skillFilter;
+        let categoryMatch = !categoryFilter;
         let difficultyMatch = !difficultyFilter;
         let maturityMatch = !maturityFilter;
-        let categoryMatch = !categoryFilter;
         let searchMatch = !searchQuery;
 
         // Check taxonomy filters
-        if (!skillMatch || !difficultyMatch || !maturityMatch || !categoryMatch) {
-            const skillBadges = lesson.querySelectorAll('[data-skill]');
+        if (!categoryMatch || !difficultyMatch || !maturityMatch) {
+            const categoryBadges = lesson.querySelectorAll('[data-category]');
             const difficultyBadges = lesson.querySelectorAll('[data-difficulty]');
             const maturityBadges = lesson.querySelectorAll('[data-maturity]');
-            const categoryBadges = lesson.querySelectorAll('[data-category]');
 
-            if (skillFilter) {
-                skillBadges.forEach(b => {
-                    if (b.getAttribute('data-skill') === skillFilter) skillMatch = true;
+            if (categoryFilter) {
+                categoryBadges.forEach(b => {
+                    if (b.getAttribute('data-category') === categoryFilter) categoryMatch = true;
                 });
             }
             if (difficultyFilter) {
@@ -120,11 +108,6 @@ function filterLessons() {
                     if (b.getAttribute('data-maturity') === maturityFilter) maturityMatch = true;
                 });
             }
-            if (categoryFilter) {
-                categoryBadges.forEach(b => {
-                    if (b.getAttribute('data-category') === categoryFilter) categoryMatch = true;
-                });
-            }
         }
 
         // Check text search - simple string matching on title and description
@@ -134,7 +117,7 @@ function filterLessons() {
             searchMatch = title.includes(searchQuery) || description.includes(searchQuery);
         }
 
-        if (skillMatch && difficultyMatch && maturityMatch && categoryMatch && searchMatch) {
+        if (categoryMatch && difficultyMatch && maturityMatch && searchMatch) {
             lesson.style.display = '';
         } else {
             lesson.style.display = 'none';
@@ -143,18 +126,16 @@ function filterLessons() {
 }
 
 // Add event listeners
-document.getElementById('filter-skill').addEventListener('change', filterLessons);
+document.getElementById('filter-category').addEventListener('change', filterLessons);
 document.getElementById('filter-difficulty').addEventListener('change', filterLessons);
 document.getElementById('filter-maturity').addEventListener('change', filterLessons);
-document.getElementById('filter-category').addEventListener('change', filterLessons);
 document.getElementById('filter-search').addEventListener('input', filterLessons);
 
 // Clear filters button
 document.getElementById('clear-filters').addEventListener('click', function() {
-    document.getElementById('filter-skill').value = '';
+    document.getElementById('filter-category').value = '';
     document.getElementById('filter-difficulty').value = '';
     document.getElementById('filter-maturity').value = '';
-    document.getElementById('filter-category').value = '';
     document.getElementById('filter-search').value = '';
     filterLessons();
 });

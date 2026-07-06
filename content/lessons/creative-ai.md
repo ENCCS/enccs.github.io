@@ -1,16 +1,15 @@
 +++
 title = "Creative AI"
-description = "Creative AI - ENCCS Lesson"
+description = "Creative AI"
 
 [taxonomies]
-skill = ["ai"]
 difficulty = ["beginner"]
 maturity = ["stable"]
 category = ["ai"]
 
 [extra]
 tags = []
-external_url = "https://enccs.github.io/creative-ai/"
+external_url = "https://www.youtube.com/watch?v=NjUhh-47Kdk"
 +++
 
 ## Overview
@@ -19,4 +18,4 @@ Creative AI lesson material from ENCCS.
 
 ## Learn More
 
-Visit the [lesson page](https://enccs.github.io/creative-ai/) to access the full content.
+Visit the [lesson page](https://www.youtube.com/watch?v=NjUhh-47Kdk) to access the full content.

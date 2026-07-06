@@ -1,22 +1,21 @@
 +++
 title = "OpenFOAM"
-description = "OpenFOAM - ENCCS Lesson"
+description = "This lesson material covers the basics of OpenFOAM, a widely used open-source CFD package."
 
 [taxonomies]
-skill = ["quantum_computing"]
 difficulty = ["intermediate"]
-maturity = ["stable"]
-category = ["quantum-computing"]
+maturity = ["alpha"]
+category = ["computational_fluid_dynamics"]
 
 [extra]
 tags = []
-external_url = "https://trex-coe.github.io/school-ncc-2023/"
+external_url = "https://enccs.github.io/openfoam/"
 +++
 
 ## Overview
 
-OpenFOAM lesson material from ENCCS.
+This course is for students, researchers, engineers and programmers who would like to get started with OpenFOAM using a HPC resource. Basic knowledge of using Linux will be required. Participants are expected to know basic numerical analysis and have CFD theoretical background.
 
 ## Learn More
 
-Visit the [lesson page](https://trex-coe.github.io/school-ncc-2023/) to access the full content.
+Visit the [lesson page](https://enccs.github.io/openfoam/) to access the full content.

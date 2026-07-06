@@ -1,12 +1,11 @@
 +++
 title = "ColonyOS tutorial"
-description = "ColonyOS tutorial - ENCCS Lesson"
+description = "What is ColonyOS and how do I use it?"
 
 [taxonomies]
-skill = ["hpc"]
 difficulty = ["intermediate"]
 maturity = ["stable"]
-category = ["basics-of-hpc"]
+category = ["basics_of_hpc"]
 
 [extra]
 tags = []
@@ -15,7 +14,7 @@ external_url = "https://enccs.github.io/colonyos-tutorial/"
 
 ## Overview
 
-ColonyOS tutorial lesson material from ENCCS.
+This course is for people who want to learn about more about ColonyOS and how to use it.
 
 ## Learn More
 

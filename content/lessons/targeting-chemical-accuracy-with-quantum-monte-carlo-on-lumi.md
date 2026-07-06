@@ -1,12 +1,11 @@
 +++
 title = "Targeting chemical accuracy with quantum Monte Carlo on LUMI"
-description = "Targeting chemical accuracy with quantum Monte Carlo on LUMI - ENCCS Lesson"
+description = "Targeting chemical accuracy with quantum Monte Carlo on LUMI"
 
 [taxonomies]
-skill = ["computational_fluid_dynamics"]
 difficulty = ["beginner"]
 maturity = ["stable"]
-category = ["computational-fluid-dynamics"]
+category = ["computational_fluid_dynamics"]
 
 [extra]
 tags = []

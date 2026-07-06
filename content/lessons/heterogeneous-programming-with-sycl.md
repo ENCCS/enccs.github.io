@@ -1,12 +1,11 @@
 +++
 title = "Heterogeneous programming with SYCL"
-description = "Heterogeneous programming with SYCL - ENCCS Lesson"
+description = "Learn how to use SYCL in C++ to program different accelerators with a single source approach"
 
 [taxonomies]
-skill = ["gpu"]
 difficulty = ["intermediate"]
 maturity = ["stable"]
-category = ["gpu-programming"]
+category = ["gpu_programming"]
 
 [extra]
 tags = []
@@ -15,7 +14,7 @@ external_url = "https://enccs.github.io/sycl-workshop/"
 
 ## Overview
 
-Heterogeneous programming with SYCL lesson material from ENCCS.
+This course is for students, researchers, engineers, and programmers that have heard of SYCL and want to learn how to use it effectively with projects they are working on. This course assumes no previous experience with SYCL.
 
 ## Learn More
 

@@ -1,22 +1,21 @@
 +++
 title = "Best practices in HPC training"
-description = "Best practices in HPC training - ENCCS Lesson"
+description = "Best practices in HPC training"
 
 [taxonomies]
-skill = ["hpc"]
 difficulty = ["intermediate"]
 maturity = ["stable"]
-category = ["hpc"]
+category = ["hpc", "instructor_training"]
 
 [extra]
 tags = []
-external_url = "https://enccs.github.io/qas2023/"
+external_url = "https://enccs.github.io/instructor-training/"
 +++
 
 ## Overview
 
-Best practices in HPC training lesson material from ENCCS.
+Best practices in HPC training lesson material from ENCCS, meant as a train-the-trainer course to promote high-quality HPC training.
 
 ## Learn More
 
-Visit the [lesson page](https://enccs.github.io/qas2023/) to access the full content.
+Visit the [lesson page](https://enccs.github.io/instructor-training/) to access the full content.

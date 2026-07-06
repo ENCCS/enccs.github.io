@@ -1,12 +1,11 @@
 +++
-title = "Quantum ESPRESSO, Siesta and Yambo"
-description = "Quantum ESPRESSO, Siesta and Yambo - ENCCS Lesson"
+title = "VASP Best practices"
+description = "This lesson will show you how to run VASP efficiently on supercomputers."
 
 [taxonomies]
-skill = ["molecular_dynamics"]
 difficulty = ["intermediate"]
 maturity = ["stable"]
-category = ["molecular-dynamics"]
+category = ["electronic-structure-calculations"]
 
 [extra]
 tags = []
@@ -15,7 +14,7 @@ external_url = "https://enccs.github.io/vasp-best-practices/"
 
 ## Overview
 
-Quantum ESPRESSO, Siesta and Yambo lesson material from ENCCS.
+In this NSC NAISS-ENCCS VASP best practices workshop, we will consider how to run the Vienna Ab-initio Simulation Package (VASP) efficiently on supercomputers. The workshop is mostly suitable for beginners and intermediate users at different stages and the focus will be on best practices for running VASP calculations. The hands-on part will be done at the Tetralith (NAISS) or LEONARDO (EuroHPC) clusters. Parts of the seminars (to be made available for download) can also be of interest for advanced users.
 
 ## Learn More
 

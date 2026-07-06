@@ -1,12 +1,11 @@
 +++
 title = "Extra Unix Shell Material"
-description = "Extra Unix Shell Material - ENCCS Lesson"
+description = "Extra Unix Shell Material"
 
 [taxonomies]
-skill = ["hpc"]
 difficulty = ["intermediate"]
 maturity = ["stable"]
-category = ["basics-of-hpc"]
+category = ["basics_of_hpc"]
 
 [extra]
 tags = []

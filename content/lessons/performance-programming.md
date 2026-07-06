@@ -1,12 +1,11 @@
 +++
 title = "Performance Programming"
-description = "Performance Programming - ENCCS Lesson"
+description = "In this lesson, you will learn about efficient coding as well as how to measure and model programs performance using a set of standard tools. We will address these questions in a language and architecture agnostic way as far as possible, with code examples in C (and optionally Fortran, in some cases). Our main architectural example will be the x86 and its implementations."
 
 [taxonomies]
-skill = ["cpu_programming"]
 difficulty = ["intermediate"]
 maturity = ["stable"]
-category = ["cpu-programming"]
+category = ["cpu_programming"]
 
 [extra]
 tags = []
@@ -15,7 +14,7 @@ external_url = "https://enccs.github.io/performance-programming/"
 
 ## Overview
 
-Performance Programming lesson material from ENCCS.
+This lesson material is targeted towards students, researchers, engineers, and developers who write programs that they would like to run faster. The focus of the course is on mid level languages like C, C++, Fortran and so on, but most of the issues discussed are relevant for assembly code, and at least the algorithm part can be useful for code written in high level languages such as Julia and Haskell.
 
 ## Learn More
 

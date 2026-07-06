@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://enccs.se"
+base_url = "https://enccs.github.io"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -8,10 +8,9 @@ compile_sass = false
 build_search_index = true
 
 taxonomies = [
-    { name = "skill", feed = false, render = false },
+    { name = "category", feed = false, render = false },
     { name = "difficulty", feed = false, render = false },
     { name = "maturity", feed = false, render = false },
-    { name = "category", feed = false, render = false },
 ]
 
 [markdown]
@@ -26,43 +25,45 @@ index_format = "fuse_javascript" # or "fuse_json"
 # Put all your custom variables here
 # Define badge colors for Skill, Difficulty Level, and Maturity
 badge_colors = {
-    skill = {
-        hpc = "bg-blue-500",
-        ai = "bg-cyan-500",
-        programming = "bg-orange-500",
-        gpu = "bg-purple-500",
-        cpu = "bg-green-500",
-        molecular_dynamics = "bg-pink-500",
-        electronic_structure = "bg-indigo-500",
-        quantum_computing = "bg-violet-500",
-        computational_fluid_dynamics = "bg-teal-500",
-        plasma_physics = "bg-rose-500",
-        programming_tools = "bg-amber-500",
-        instructor_training = "bg-slate-500"
-    },
     category = {
-        basics_of_hpc = "bg-blue-600",
-        ai = "bg-cyan-600",
-        gpu_programming = "bg-purple-600",
-        cpu_programming = "bg-green-600",
-        molecular_dynamics = "bg-pink-600",
-        electronic_structure_calculations = "bg-indigo-600",
-        quantum_computing = "bg-violet-600",
-        computational_fluid_dynamics = "bg-teal-600",
-        plasma_physics = "bg-rose-600",
-        programming_tools = "bg-amber-600",
-        high_level_language_programming = "bg-orange-600",
-        instructor_training_program = "bg-slate-600"
+        hpc = "bg-[#FFC107]",
+        ai = "bg-[#2A2B31]",
+        gpu_programming = "bg-[#2A2B31]",
+        cpu_programming = "bg-[#FFC107]",
+        molecular_dynamics = "bg-[#2A2B31]",
+        quantum_computing = "bg-[#2A2B31]",
+        computational_fluid_dynamics = "bg-[#FFC107]",
+        plasma_physics = "bg-[#2A2B31]",
+        programming_tools = "bg-[#FFC107]",
+        instructor_training = "bg-[#2A2B31]",
+        basics_of_hpc = "bg-[#2A2B31]",
+        electronic_structure_calculations = "bg-[#FFC107]",
+        high_level_language_programming = "bg-[#2A2B31]",
     },
-    difficulty = { beginner = "text-emerald-400", intermediate = "text-amber-400", advanced = "text-red-400" },
-    maturity = { alpha = "text-sky-400", beta = "text-blue-400", stable = "text-blue-500" }
+    difficulty = { beginner = "bg-[#00d084]", intermediate = "bg-[#FFC107]", advanced = "bg-[#FFC107]" },
+    maturity = { alpha = "bg-[#FFC107]", beta = "bg-[#FFC107]", stable = "bg-[#00d084]" }
 }
+
+[extra.category_names]
+hpc = "HPC"
+ai = "AI"
+gpu_programming = "GPU programming"
+cpu_programming = "CPU programming"
+molecular_dynamics = "Molecular dynamics"
+quantum_computing = "Quantum computing"
+computational_fluid_dynamics = "Computational fluid dynamics"
+plasma_physics = "Plasma physics"
+programming_tools = "Programming tools"
+instructor_training = "Instructor training"
+basics_of_hpc = "Basics of HPC"
+electronic_structure_calculations = "Electronic structure calculations"
+high_level_language_programming = "High level language programming"
 
 # Navigation configuration
 [extra.nav]
-logo_src = "https://media.enccs.se/2022/12/ENCCS-Logo-Horizontal-Colour-low-res-323.png"
+logo_src = "https://media.enccs.se/2026/03/ENCCS-Logo-Horizontal-White.png"
 logo_alt = "ENCCS - EuroCC National Competence Centre Sweden logo"
-logo_url = "https://enccs.se"
+logo_url = "https://enccs.github.io"
 library_text = "Lesson Library"
 library_url = "/"
 get_access_url = "https://enccs.se/all-services/"

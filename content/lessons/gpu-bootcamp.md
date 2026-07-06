@@ -1,22 +1,21 @@
 +++
 title = "GPU bootcamp"
-description = "GPU bootcamp - ENCCS Lesson"
+description = "NVIDIA-developed materials on GPU programming with different paradigms"
 
 [taxonomies]
-skill = ["gpu"]
 difficulty = ["beginner"]
 maturity = ["stable"]
-category = ["gpu-programming"]
+category = ["gpu_programming"]
 
 [extra]
 tags = []
-external_url = "https://github.com/ENCCS/gpubootcamp/"
+external_url = "https://github.com/ENCCS/Nvidia-Bootcamp/"
 +++
 
 ## Overview
 
-GPU bootcamp lesson material from ENCCS.
+Forked from https://github.com/openhackathons-org/gpubootcamp.
 
 ## Learn More
 
-Visit the [lesson page](https://github.com/ENCCS/gpubootcamp/) to access the full content.
+Visit the [lesson page](https://github.com/ENCCS/Nvidia-Bootcamp/) to access the full content.

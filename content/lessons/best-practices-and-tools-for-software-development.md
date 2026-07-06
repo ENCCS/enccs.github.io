@@ -1,12 +1,11 @@
 +++
-title = "Best Practices and Tools for Software Development"
-description = "Best Practices and Tools for Software Development - ENCCS Lesson"
+title = "Best practices and tools for software development"
+description = "Lessons developed by CodeRefinery covering topics like versioning, git, test-driven development and more."
 
 [taxonomies]
-skill = ["programming_tools"]
 difficulty = ["intermediate"]
 maturity = ["stable"]
-category = ["programming-tools"]
+category = ["programming_tools"]
 
 [extra]
 tags = []
@@ -15,7 +14,7 @@ external_url = "https://coderefinery.org/lessons/"
 
 ## Overview
 
-Best Practices and Tools for Software Development lesson material from ENCCS.
+Lessons developed by CodeRefinery covering topics like versioning, git, test-driven development and more.
 
 ## Learn More
 

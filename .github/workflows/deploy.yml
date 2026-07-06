@@ -22,16 +22,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v6.0.1
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: "24"
-
-      - name: Install dependencies and build Tailwind CSS
-        run: |
-          npm ci
-          npm run build
-
       - name: Build Zola + upload Pages artifact
         uses: getzola/github-pages@066755243e69f508fd1a74739fbf1a65f656c790
         with:

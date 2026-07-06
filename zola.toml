@@ -63,53 +63,6 @@ high_level_language_programming = "High level language programming"
 [extra.nav]
 logo_src = "https://media.enccs.se/2026/03/ENCCS-Logo-Horizontal-White.png"
 logo_alt = "ENCCS - EuroCC National Competence Centre Sweden logo"
-logo_url = "https://enccs.github.io"
-library_text = "Lesson Library"
-library_url = "/"
-get_access_url = "https://enccs.se/all-services/"
-
-# Main header navigation links
-[[extra.nav.main_links]]
-name = "Events"
-url = "https://enccs.se/events/"
-
-[[extra.nav.main_links]]
-name = "Services"
-url = "#"
-dropdown = true
-
-[[extra.nav.main_links.sub_links]]
-name = "All services"
-url = "https://enccs.se/all-services/"
-
-[[extra.nav.main_links.sub_links]]
-name = "Expert support"
-url = "https://enccs.se/all-services/expert-support/"
-
-[[extra.nav.main_links.sub_links]]
-name = "Access to compute resources"
-url = "https://enccs.se/all-services/access-to-compute-resources/"
-
-[[extra.nav.main_links.sub_links]]
-name = "Training and upskilling"
-url = "https://enccs.se/all-services/training/"
-
-[[extra.nav.main_links]]
-name = "About"
-url = "#"
-dropdown = true
-
-[[extra.nav.main_links.sub_links]]
-name = "About ENCCS"
-url = "https://enccs.se/about/"
-
-[[extra.nav.main_links.sub_links]]
-name = "Contact us"
-url = "https://enccs.se/contact/"
-
-[[extra.nav.main_links]]
-name = "Lessons"
-url = "/lessons/"
 
 # Footer configuration
 [extra.footer]

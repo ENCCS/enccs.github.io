@@ -1,10 +1,12 @@
 +++
 title = "ENCCS - Lesson Library"
-template = "lessons.html"
 +++
 
-Welcome to the ENCCS Lesson Library. Carefully curated and open-source lesson material from ENCCS and external partners that guide you into the world of supercomputing.
+<script>
+  // Fast redirect to lessons page
+  window.location.href = "/lessons/";
+</script>
 
-Our experts at ENCCS create custom lesson material for all our courses, as well as external organisations that we have close collaboration with. The lessons are regularly improved and kept up-to-date.
+<meta http-equiv="refresh" content="0; url=/lessons/" />
 
-Click on the lesson materials from our workshops below which are also fitting for self learning.
+<p>Redirecting to <a href="/lessons/">ENCCS Lesson Library</a>...</p>

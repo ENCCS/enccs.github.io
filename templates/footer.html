@@ -1,66 +1,114 @@
-<footer class="bg-[#2A2B31] border-t border-[#2A2B31]">
-    <div class="container mx-auto px-4 py-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-                <a
-                    href="https://enccs.se"
-                    class="flex items-center space-x-2 mb-4"
-                >
-                    <img
-                        src="https://media.enccs.se/2026/03/ENCCS-Logo-Horizontal-White.png"
-                        alt="ENCCS - EuroCC National Competence Centre Sweden logo"
-                        class="h-10 w-auto"
-                    />
-                </a>
+<footer class="bg-[#2A2B31] text-white">
+    <div class="container mx-auto px-4 py-12">
+        {# Top row with logo and links #}
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {# Logo #}
+            <div class="flex justify-center md:justify-start">
+                <img
+                    src="https://media.enccs.se/2026/03/enccs-white.png"
+                    alt="ENCCS logo"
+                    class="h-48 w-auto max-w-xs"
+                />
             </div>
-            <div>
-                <a
-                    href="https://www.linkedin.com/company/enccs/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-white hover:text-[#FFC107] transition-colors"
-                >
-                    {# LinkedIn icon -
-                    https://www.svgrepo.com/svg/500918/linkedin #} {# License:
-                    OFL, Author: kudakurage #}
-                    <svg
-                        class="w-12 h-12 fill-current"
-                        viewBox="-5.5 0 32 32"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M0 8.219v15.563c0 1.469 1.156 2.625 2.625 2.625h15.563c0.719 0 1.406-0.344 1.844-0.781 0.469-0.469 0.781-1.063 0.781-1.844v-15.563c0-1.469-1.156-2.625-2.625-2.625h-15.563c-0.781 0-1.375 0.313-1.844 0.781-0.438 0.438-0.781 1.125-0.781 1.844zM2.813 10.281c0-1 0.813-1.875 1.813-1.875 1.031 0 1.875 0.875 1.875 1.875 0 1.031-0.844 1.844-1.875 1.844-1 0-1.813-0.813-1.813-1.844zM7.844 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.656c0.375 0 0.375 0.438 0.375 0.719 0.75-0.75 1.719-0.938 2.719-0.938 2.438 0 4 1.156 4 3.719v6.438c0 0.219-0.188 0.406-0.375 0.406h-2.75c-0.219 0-0.375-0.219-0.375-0.406v-5.813c0-0.969-0.281-1.5-1.375-1.5-1.375 0-1.719 0.906-1.719 2.125v5.188c0 0.219-0.219 0.406-0.438 0.406h-2.719c-0.156 0-0.375-0.219-0.375-0.406zM2.875 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.719c0.25 0 0.406 0.156 0.406 0.406v9.531c0 0.219-0.188 0.406-0.406 0.406h-2.719c-0.188 0-0.375-0.219-0.375-0.406z"
-                        ></path>
-                    </svg>
-                </a>
+            
+            {# Navigation links #}
+            <div class="flex flex-col space-y-4">
+                <a href="https://enccs.se/events" class="text-white hover:text-[#FFC107] transition-colors">Events and learning</a>
+                <a href="https://enccs.se/how-we-help/" class="text-white hover:text-[#FFC107] transition-colors">How we help</a>
             </div>
+            
+            {# Contact info #}
             <div>
-                <h3 class="text-white font-semibold mb-4">
-                    {{ config.extra.footer.quick_links_title }}
-                </h3>
-                <ul class="space-y-2">
-                    {% for link in config.extra.footer.quick_links %}
-                    <li>
-                        <a
-                            href="{{ link.url }}"
-                            class="text-white hover:text-[#FFC107] transition-colors"
-                            >{{ link.name }}</a
-                        >
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-white font-semibold mb-4">Contact Info</h3>
-                <p class="text-white">
-                    <a href="mailto:info@enccs.se">info@enccs.se</a>
-                </p>
+                <h4 class="font-semibold mb-4">Contact Info</h4>
+                <a href="mailto:info@enccs.se" class="text-white hover:text-[#FFC107] transition-colors">info@enccs.se</a>
             </div>
         </div>
-        <div
-            class="border-t border-[#2A2B31] mt-8 pt-8 text-center text-white"
-        >
-            <p>&copy; 2026 ENCCS. EuroCC National Competence Centre Sweden. All rights reserved.</p>
+        
+        {# Divider #}
+        <hr class="border-t border-white/20 my-8" />
+        
+        {# Funding logos row #}
+        <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 mb-12">
+            <img
+                src="https://media.enccs.se/2026/07/Co-funded-by-the-EU_RGB_POS-300x67.png"
+                alt="Co-funded by the European Union"
+                class="h-12 md:h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img
+                src="https://media.enccs.se/2026/07/EuroHPC-JU-logo-300x82.png"
+                alt="EuroHPC Joint Undertaking"
+                class="h-14 md:h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img
+                src="https://media.enccs.se/2026/07/Logo_HPC-in-Europe_all-white-300x200.png"
+                alt="HPC in Europe"
+                class="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img
+                src="https://media.enccs.se/2026/07/EuroCC3-Logo_white-300x300.png"
+                alt="EuroCC3"
+                class="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img
+                src="https://media.enccs.se/2026/07/rise_logo_svart-234x300.png"
+                alt="RISE Research Institutes of Sweden"
+                class="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img
+                src="https://media.enccs.se/2026/07/LiU_primary_white-300x108.png"
+                alt="Linköping University"
+                class="h-12 md:h-14 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img
+                src="https://media.enccs.se/2026/07/Vetenskapsradet-300x141.png"
+                alt="Vetenskapsrådet - Swedish Research Council"
+                class="h-14 md:h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <img
+                src="https://media.enccs.se/2026/07/Vinnova_green-300x64.png"
+                alt="Vinnova - Sweden's Innovation Agency"
+                class="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+            />
+        </div>
+        
+        {# Divider #}
+        <hr class="border-t border-white/20 my-8" />
+        
+        {# Funding text #}
+        <div class="text-center text-sm text-white/80 space-y-4">
+            <p>
+                ENCCS is the Swedish node of the EuroCC3 project.
+            </p>
+            <p>
+                EuroCC 3 has received funding from the 
+                <a href="https://eurohpc-ju.europa.eu/index_en" class="text-white hover:text-[#FFC107] underline">
+                    European High-Performance Computing Joint Undertaking (JU)
+                </a> 
+                under Grant Agreement No. 101306701. The JU receives support from the 
+                <a href="https://european-union.europa.eu/" class="text-white hover:text-[#FFC107] underline">
+                    European Union
+                </a>
+                's Digital Europe Programme and Germany, Albania, Austria, Belgium, Bosnia and Herzegovina, 
+                Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Greece, Hungary, 
+                Iceland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Montenegro, the Netherlands, 
+                North Macedonia, Norway, Poland, Portugal, Romania, Serbia, Slovakia, Slovenia, Spain, 
+                Sweden, Türkiye, and Kosovo.
+            </p>
+            <p>
+                Funded by the European Union. Views and opinions expressed are however those of the 
+                author(s) only and do not necessarily reflect those of the European Union or EuroHPC 
+                Joint Undertaking. Neither the European Union nor the EuroHPC Joint Undertaking can be 
+                held responsible for them.
+            </p>
+            <p>
+                ENCCS has also received national funding through Vinnova and the Swedish Research Council (VR)
+            </p>
+            <p>
+                <a href="https://hpc-portal.eu/" class="text-white hover:text-[#FFC107] underline">
+                    HPC in Europe
+                </a> 
+                is the umbrella brand uniting Europe's high-performance computing initiatives across 36+ countries.
+            </p>
         </div>
     </div>
 </footer>

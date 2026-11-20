@@ -1,6 +1,7 @@
 +++
 title = "OpenMP for GPU offloading"
 description = "This course is intended for newcomers to OpenMP GPU offloading. By the end of it, students will feel comfortable with the basic process of introducing OpenMP offloading constructs to a simple code base."
+date = 2021-04-21
 
 [taxonomies]
 difficulty = ["beginner"]

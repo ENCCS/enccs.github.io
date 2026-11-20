@@ -1,6 +1,7 @@
 +++
 title = "Quantum Autumn School 2025"
 description = "Lecture slides and hands-on tutorials from a five-day school on quantum computing with an emphasis on integration with HPC, from qubits, gates and circuits to quantum algorithms, error correction and hybrid HPC-QC workflows."
+date = 2025-09-02
 
 [taxonomies]
 difficulty = ["beginner"]

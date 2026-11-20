@@ -1,6 +1,7 @@
 +++
 title = "Targeting chemical accuracy with quantum Monte Carlo on LUMI"
 description = "A workshop giving a comprehensive introduction to quantum Monte Carlo methods and their practical application in molecular systems, with the combined use of Quantum Package and the quantum Monte Carlo code CHAMP."
+date = 2023-01-26
 
 [taxonomies]
 difficulty = ["beginner"]

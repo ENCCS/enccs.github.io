@@ -1,6 +1,7 @@
 +++
 title = "ColonyOS tutorial"
 description = "What is ColonyOS and how do I use it?"
+date = 2024-02-26
 
 [taxonomies]
 difficulty = ["intermediate"]

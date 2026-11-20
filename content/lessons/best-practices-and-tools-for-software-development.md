@@ -1,6 +1,7 @@
 +++
 title = "Best practices and tools for software development"
 description = "Lessons developed by CodeRefinery covering topics like versioning, git, test-driven development and more."
+date = 2016-02-22
 
 [taxonomies]
 difficulty = ["intermediate"]

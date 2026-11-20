@@ -1,6 +1,7 @@
 +++
 title = "Intermediate MPI"
 description = "This training material targets programmers who already have experience with basic MPI and are ready to take the next step to more advanced usage. Topics covered include communicators and groups, derived datatypes, one-sided communication, collective communication and hybrid MPI-threading approaches."
+date = 2020-10-28
 
 [taxonomies]
 difficulty = ["intermediate"]

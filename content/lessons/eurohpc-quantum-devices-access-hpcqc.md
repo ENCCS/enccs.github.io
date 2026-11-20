@@ -1,6 +1,7 @@
 +++
 title = "EuroHPC JU quantum devices and HPC-QC access in practice"
 description = "A practical guide to getting onboarded and running your first jobs on three EuroHPC JU quantum computers, Euro-Q-Exa at LRZ, Piast-Q at PCSS and VLQ at IT4Innovations, which you can apply to use and, if your application is granted, use free of charge."
+date = 2026-10-04
 
 [taxonomies]
 difficulty = ["beginner"]

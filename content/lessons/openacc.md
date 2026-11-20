@@ -3,6 +3,7 @@ title = "OpenACC training"
 description = "An introduction to GPU programming with directive-based OpenACC: the architecture of GPU accelerators, basic OpenACC usage, how to control data movement between CPUs and GPUs, and basic optimisation of the code."
 # Draft: its OpenACC episodes are also in "Intro to CUDA & OpenACC" and "Intermediate OpenACC/CUDA". Delete the draft line to list both.
 draft = true
+date = 2021-08-30
 
 [taxonomies]
 difficulty = ["beginner"]

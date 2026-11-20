@@ -9,6 +9,7 @@ problems that would matter once they are published. Only the standard library is
 """
 
 import argparse
+import datetime
 import re
 import sys
 import tomllib
@@ -70,6 +71,9 @@ def main():
                 problems.append(f"{name}: category {cat!r} is not in zola.toml{hint}")
         if not tax.get("category"):
             problems.append(f"{name}: no category")
+        # The library lists the newest lessons first, by this date
+        if not isinstance(fm.get("date"), datetime.date):
+            problems.append(f"{name}: no date (when the lesson first appeared, written as date = YYYY-MM-DD)")
         for kind, allowed in LEVELS.items():
             values = tax.get(kind, [])
             if not values:

@@ -1,6 +1,7 @@
 +++
 title = "CMake hands-on workshop"
 description = "Learn how to use CMake as a build tool for your projects through a hands-on workshop!"
+date = 2020-11-27
 
 [taxonomies]
 difficulty = ["intermediate"]

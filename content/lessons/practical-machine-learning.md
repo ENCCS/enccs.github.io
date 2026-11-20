@@ -1,6 +1,7 @@
 +++
 title = "Practical Machine Learning"
 description = "A comprehensive introduction to the fundamental principles and techniques of machine learning: supervised and unsupervised learning, model evaluation, data preprocessing and feature selection, through theory, practical exercises and real-world examples."
+date = 2025-09-09
 
 [taxonomies]
 difficulty = ["beginner"]

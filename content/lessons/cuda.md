@@ -3,6 +3,7 @@ title = "CUDA training"
 description = "For students, researchers, engineers and programmers who would like to learn GPU programming with CUDA: GPU architecture, basic CUDA usage, data movement between CPU and GPU, optimising kernels, and task-based parallelism with streams and events."
 # Draft: its CUDA episodes are also in "Intro to CUDA & OpenACC" and "Intermediate OpenACC/CUDA". Delete the draft line to list both.
 draft = true
+date = 2021-08-23
 
 [taxonomies]
 difficulty = ["beginner"]

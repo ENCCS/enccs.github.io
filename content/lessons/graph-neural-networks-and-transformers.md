@@ -1,6 +1,7 @@
 +++
 title = "Graph Neural Networks and Transformers"
 description = "Learn how graph neural networks became some of the most popular architectures and how they can be used to sovle complex problems!"
+date = 2021-10-17
 
 [taxonomies]
 difficulty = ["intermediate"]

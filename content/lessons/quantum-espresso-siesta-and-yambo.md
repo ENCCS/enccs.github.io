@@ -1,6 +1,7 @@
 +++
 title = "VASP Best practices"
 description = "This lesson will show you how to run VASP efficiently on supercomputers."
+date = 2023-03-14
 
 [taxonomies]
 difficulty = ["intermediate"]

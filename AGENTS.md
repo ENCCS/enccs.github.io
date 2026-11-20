@@ -212,6 +212,7 @@ Edit `zola.toml` to modify:
 - `.github/workflows/new-lessons.yml` runs it every Monday and opens (or updates) one pull request, "New lesson sites found", with those drafts.
 - `scripts/check_cards.py` checks every card: categories must be keys of `[extra.badge_colors.category]` in `zola.toml`, written with underscores; the description is not empty and does not repeat the title; no two cards share an `external_url`; the "lesson page" link in the text is the `external_url`. `--links` also opens every link. Run it before every commit.
 - Write titles and descriptions only from each lesson's own text. Never rename a card file: its name is its address.
+- Date: `date = YYYY-MM-DD` on every card, when the lesson first appeared: the creation date of its GitHub repository (ENCCS or other), the upload date of a video, or the date of an event page. The library lists the newest first (`sort_by = "date"` in `content/lessons/_index.md`).
 - Maturity: `stable` once the event the material was made for has been held, even if its site is unfinished; otherwise `beta` (complete, not yet taught) or `alpha` (work in progress).
 
 ## Deployment

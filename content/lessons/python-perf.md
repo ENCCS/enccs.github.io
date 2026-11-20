@@ -1,6 +1,7 @@
 +++
 title = "Python performance workshop"
 description = "A mini-workshop for Python developers who want to write code with better performance and potentially run it on supercomputers: benchmarking, profiling, optimising and parallelising Python code."
+date = 2024-09-09
 
 [taxonomies]
 difficulty = ["intermediate"]

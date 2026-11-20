@@ -1,6 +1,7 @@
 +++
 title = "Plotting and Programming in Python"
 description = "This lesson is an introduction to programming in Python 3 for people with little or no previous programming experience."
+date = 2016-01-07
 
 [taxonomies]
 difficulty = ["intermediate"]

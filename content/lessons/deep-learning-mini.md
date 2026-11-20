@@ -1,6 +1,7 @@
 +++
 title = "Introduction to Deep Learning (mini-course)"
 description = "A hands-on mini-course on the first steps in deep learning: prepare data, build a basic model in Python with Keras, monitor and troubleshoot the training process and use advanced layer types such as convolutional layers."
+date = 2025-02-18
 
 [taxonomies]
 difficulty = ["beginner"]

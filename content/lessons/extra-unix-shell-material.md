@@ -1,6 +1,7 @@
 +++
 title = "Extra Unix Shell Material"
 description = "Short topical lessons on particular shell features that are useful to researchers, supplementing Software Carpentry's Introduction to the Unix Shell."
+date = 2015-03-15
 
 [taxonomies]
 difficulty = ["intermediate"]

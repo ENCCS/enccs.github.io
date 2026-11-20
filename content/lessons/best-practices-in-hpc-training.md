@@ -1,6 +1,7 @@
 +++
 title = "Best practices in HPC training"
 description = "Instructor training material focused on helping competent practitioners and experts teach their knowledge to others. It also serves as a kickstart to teaching available ENCCS lessons."
+date = 2022-08-08
 
 [taxonomies]
 difficulty = ["intermediate"]

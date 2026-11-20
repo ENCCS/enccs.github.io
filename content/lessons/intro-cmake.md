@@ -3,6 +3,7 @@ title = "Introduction to CMake"
 description = "Learn to write a CMake build system for C/C++ and Fortran projects producing libraries and executables, make it work on different platforms and use external dependencies, with optional testing in CTest and mixed-language builds."
 # Draft: its episodes are part of "CMake hands-on workshop". Delete the draft line to list both.
 draft = true
+date = 2024-08-16
 
 [taxonomies]
 difficulty = ["beginner"]

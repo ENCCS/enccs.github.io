@@ -1,6 +1,7 @@
 +++
 title = "Creative AI"
 description = "A 2-hour webinar in which Erik Ylipää (ENCCS, RISE) gives an overview of where creative AI models for text and image generation come from, how they work and what can be expected in the future."
+date = 2023-02-27
 
 [taxonomies]
 difficulty = ["beginner"]

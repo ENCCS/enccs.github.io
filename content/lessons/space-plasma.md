@@ -1,6 +1,7 @@
 +++
 title = "Space Plasma Simulations with Vlasiator on LUMI Supercomputer"
 description = "With this lesson material, you will learn how to use Vlasiator to simulate space plasma."
+date = 2024-01-08
 
 [taxonomies]
 difficulty = ["intermediate"]

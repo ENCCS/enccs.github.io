@@ -1,6 +1,7 @@
 +++
 title = "Hyper Parameter Search using Optuna"
 description = "Designing Neural Network learning algorithm requires setting many hyper parameters. In this 2 hour workshop we will see how we can use the Optuna python package to automate the labourious task of finding good hyper parameters."
+date = 2022-12-07
 
 [taxonomies]
 difficulty = ["beginner"]

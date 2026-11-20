@@ -1,6 +1,7 @@
 +++
 title = "Efficient materials modelling on HPC with Quantum ESPRESSO, Siesta and Yambo"
 description = "This training material gives a broad overview of important fundamental concepts for molecular and materials modelling on HPC, with a focus on Quantum ESPRESSO, SIESTA and Yambo. Theory sections are interleaved with practical demonstrations and hands-on exercises."
+date = 2023-12-14
 
 [taxonomies]
 difficulty = ["intermediate"]

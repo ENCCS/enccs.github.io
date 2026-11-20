@@ -1,6 +1,7 @@
 +++
 title = "GPU bootcamp"
 description = "NVIDIA-developed materials on GPU programming with different paradigms"
+date = 2021-02-19
 
 [taxonomies]
 difficulty = ["beginner"]

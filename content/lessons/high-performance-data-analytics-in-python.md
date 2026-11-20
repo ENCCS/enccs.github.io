@@ -1,6 +1,7 @@
 +++
 title = "Python for High Performance Data Analytics"
 description = "This lesson provides a broad overview of methods to work with large datasets using tools and libraries from the Python ecosystem. Since this field is fairly extensive, we will try to expose just enough details on each topic for you to get a good idea of the picture and an understanding of what combination of tools and libraries will work well for your particular use case."
+date = 2025-11-10
 
 [taxonomies]
 difficulty = ["beginner"]

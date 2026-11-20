@@ -1,6 +1,7 @@
 +++
 title = "Introduction to containers"
 description = "This material aims at researchers and developers who have experience working with AI and wish to train their applications on supercomputers."
+date = 2022-08-23
 
 [taxonomies]
 difficulty = ["beginner"]

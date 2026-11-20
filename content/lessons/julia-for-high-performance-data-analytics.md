@@ -1,6 +1,7 @@
 +++
 title = "Julia for High-Performance Data Analytics"
 description = "Julia has a rich ecosystem of libraries aimed towards scientific computing and a powerful builtin package manager to install and manage their dependencies. Thanks to a rapidly growing ecosystem of packages for data science and machine learning, Julia is quickly gaining ground in both academic and industrial domains which deal with large datasets."
+date = 2022-11-03
 
 [taxonomies]
 difficulty = ["advanced"]

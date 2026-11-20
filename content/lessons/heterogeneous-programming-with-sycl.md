@@ -1,6 +1,7 @@
 +++
 title = "Heterogeneous programming with SYCL"
 description = "Learn how to use SYCL in C++ to program different accelerators with a single source approach"
+date = 2021-06-14
 
 [taxonomies]
 difficulty = ["intermediate"]

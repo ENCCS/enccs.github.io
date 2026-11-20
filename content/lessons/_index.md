@@ -1,6 +1,8 @@
 +++
 title = "ENCCS - Lesson Library"
 template = "lessons.html"
+# Newest lessons first; each card's date is when the lesson first appeared
+sort_by = "date"
 +++
 
 Carefully curated and open-source lesson material from ENCCS and external partners that guide you into the world of supercomputing.

@@ -1,6 +1,7 @@
 +++
 title = "VeloxChem: quantum chemistry towards pre-exascale and beyond"
 description = "Material on VeloxChem in High Performance Computing settings"
+date = 2022-02-16
 
 [taxonomies]
 difficulty = ["advanced"]

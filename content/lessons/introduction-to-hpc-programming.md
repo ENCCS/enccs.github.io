@@ -1,6 +1,7 @@
 +++
 title = "Introduction to HPC Programming"
 description = "This workshop is an introduction to using high-performance computing systems effectively."
+date = 2017-03-24
 
 [taxonomies]
 difficulty = ["beginner"]

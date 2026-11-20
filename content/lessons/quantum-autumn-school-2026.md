@@ -1,6 +1,7 @@
 +++
 title = "Quantum Autumn School 2026"
 description = "Programme of the in-person Quantum Autumn School 2026: three days from basic concepts and hardware to quantum algorithms, quantum chemistry and quantum machine learning, with Qrisp and the IQM Resonance platform. The materials for each day are still to be uploaded."
+date = 2026-09-30
 
 [taxonomies]
 difficulty = ["beginner"]

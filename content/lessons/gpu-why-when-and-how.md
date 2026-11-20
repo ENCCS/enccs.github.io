@@ -1,6 +1,7 @@
 +++
 title = "GPU: Why, When and How?"
 description = "Learn how the architecture of GPUs differs from that of CPUs and what tools are available for GPU programming, both in high- and low-level languages, and which of them are portable across different vendors."
+date = 2022-08-12
 
 [taxonomies]
 difficulty = ["beginner"]

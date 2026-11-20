@@ -1,6 +1,7 @@
 +++
 title = "Introduction to Julia"
 description = "This lesson covers the basics of Julia: its syntax, multiple-dispatch paradigm, package development and best practices. It spans the necessary foundational skills required to follow the two other ENCCS lessons on Julia."
+date = 2023-09-11
 
 [taxonomies]
 difficulty = ["advanced"]

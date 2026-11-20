@@ -1,6 +1,7 @@
 +++
 title = "Julia for High-Performance Computing"
 description = "This lesson goes through various approaches for writing performant and parallel code, including how to write fast serial code, how to write multithreaded and distributed code, how to run Julia on an HPC system, and how to port Julia code to GPUs."
+date = 2022-01-14
 
 [taxonomies]
 difficulty = ["advanced"]

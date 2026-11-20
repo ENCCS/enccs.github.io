@@ -1,6 +1,7 @@
 +++
 title = "Python for Scientific Computing"
 description = "This course discusses how Python can be utilized in scientific computing. The course starts by introducing some of the main Python tools for computing: Jupyter for interactive analysis, NumPy and SciPy for numerical analysis, Matplotlib for visualization, and so on."
+date = 2020-08-30
 
 [taxonomies]
 difficulty = ["beginner"]

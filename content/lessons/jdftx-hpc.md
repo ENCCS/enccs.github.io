@@ -1,6 +1,7 @@
 +++
 title = "JDFTx on HPC"
 description = "Short tutorials on building the open-source plane-wave DFT code JDFTx on HPC systems: CPU and CUDA builds on LUMI-C, Dardel GH200 and Leonardo Booster, and the ENCCS HIP port for LUMI's AMD GPUs."
+date = 2026-10-13
 
 [taxonomies]
 difficulty = ["intermediate"]

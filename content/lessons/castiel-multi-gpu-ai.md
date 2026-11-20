@@ -1,6 +1,7 @@
 +++
 title = "CASTIEL2 Multi-GPU AI"
 description = "Material from the CASTIEL2 Multi-GPU AI Train the Trainer workshop on scaling AI for model training and inference: PyTorch Distributed Data Parallel, model parallelism, PyTorch Lightning, fine-tuning, MLOps on HPC, Ray, RAG and hyperparameter tuning."
+date = 2025-10-23
 
 [taxonomies]
 difficulty = ["intermediate"]

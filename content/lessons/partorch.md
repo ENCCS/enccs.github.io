@@ -1,6 +1,7 @@
 +++
 title = "PyTorch DistributedDataParallel workshop"
 description = "Learn how to train a neural network in parallel with PyTorch's built-in DistributedDataParallel framework, and how to adapt an existing model to it."
+date = 2022-12-07
 
 [taxonomies]
 difficulty = ["intermediate"]

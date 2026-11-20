@@ -1,6 +1,7 @@
 +++
 title = "Universal MLIPs on HPC: hands-on"
 description = "Universal machine-learned interatomic potentials (MLIPs) on HPC: batched relaxation, fine-tuning and CI-NEB migration barriers with MACE-MP, Orb-v3, MatGL and UMA, then silicon MD with MACE-MP in ALCHEMI Toolkit and LAMMPS, from one trajectory to many replicas and GPUs."
+date = 2026-09-28
 
 [taxonomies]
 difficulty = ["intermediate"]

@@ -55,7 +55,7 @@
 
 <!-- Lesson Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="lesson-grid">
-    {% for page in section.pages | sort(attribute="title") %}
+    {% for page in section.pages %}
     <a href="{{ page.permalink | safe }}" class="block no-underline group">
         <article
             class="bg-white border border-gray-200 rounded-xl p-6 group-hover:border-[#FFC107] group-hover:shadow-lg group-hover:shadow-[#FFC107]/20 transition-all duration-200 h-full"

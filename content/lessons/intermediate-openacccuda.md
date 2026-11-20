@@ -1,6 +1,7 @@
 +++
 title = "Intermediate OpenACC/CUDA"
 description = "Intermediate concepts in OpenACC and CUDA."
+date = 2021-05-18
 
 [taxonomies]
 difficulty = ["intermediate"]

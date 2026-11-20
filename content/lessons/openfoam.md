@@ -1,6 +1,7 @@
 +++
 title = "OpenFOAM"
 description = "This lesson material covers the basics of OpenFOAM, a widely used open-source CFD package."
+date = 2021-11-18
 
 [taxonomies]
 difficulty = ["intermediate"]

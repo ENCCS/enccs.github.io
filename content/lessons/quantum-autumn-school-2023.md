@@ -1,6 +1,7 @@
 +++
 title = "Quantum Autumn School 2023"
 description = "A three-day autumn school covering the fundamentals of quantum computing, delivered by ENCCS with the Wallenberg Centre of Quantum Technologies (WACQT) and the Nordic/Baltic NordIQuEst project."
+date = 2023-09-07
 
 [taxonomies]
 difficulty = ["intermediate"]

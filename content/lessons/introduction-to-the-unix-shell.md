@@ -1,6 +1,7 @@
 +++
 title = "Introduction to the Unix shell"
 description = "Use of the shell is fundamental to a wide range of advanced computing tasks, including high-performance computing. These lessons will introduce you to this powerful tool."
+date = 2014-10-22
 
 [taxonomies]
 difficulty = ["beginner"]

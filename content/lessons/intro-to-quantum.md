@@ -1,6 +1,7 @@
 +++
 title = "Introduction to Quantum Computing and hybrid HPC-QC systems"
 description = "This lesson will give you the fundamental building blocks to understand quantum computing."
+date = 2022-05-09
 
 [taxonomies]
 difficulty = ["intermediate"]

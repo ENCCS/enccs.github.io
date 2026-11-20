@@ -1,6 +1,7 @@
 +++
 title = "GROMACS GPU performance"
 description = "Learn how to extract the maximum performance from your GROMACS simulations!"
+date = 2020-12-17
 
 [taxonomies]
 difficulty = ["advanced"]

@@ -1,6 +1,7 @@
 +++
 title = "Performance Programming"
 description = "In this lesson, you will learn about efficient coding as well as how to measure and model programs performance using a set of standard tools. We will address these questions in a language and architecture agnostic way as far as possible, with code examples in C (and optionally Fortran, in some cases). Our main architectural example will be the x86 and its implementations."
+date = 2023-04-17
 
 [taxonomies]
 difficulty = ["intermediate"]

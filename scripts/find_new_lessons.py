@@ -158,6 +158,7 @@ def write_draft(c):
         f"""+++
 title = {toml_string(c['title'])}
 description = {toml_string(c['description'])}
+date = {c['created']}
 # Found by scripts/find_new_lessons.py. Check the text against the lesson, set the
 # category, difficulty (beginner, intermediate, advanced) and maturity (stable once its
 # event has been held, else beta or alpha), then delete the draft line to publish the card.
@@ -211,6 +212,7 @@ def main():
             "url": url,
             "site_status": site["status"],
             "generator": site["generator"],
+            "created": (r.get("created_at") or "")[:10],
             "last_push": (r.get("pushed_at") or "")[:10],
             "fork": bool(r.get("fork")),
             "repo_description": r.get("description") or "",

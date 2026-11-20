@@ -1,6 +1,7 @@
 +++
 title = "Practical Data Wrangling"
 description = "Practical data wrangling techniques for numerical, categorical, time series, text and image data: learn to detect and handle missing values, outliers, inconsistencies and duplicates, and prepare datasets for machine learning and analytics."
+date = 2026-09-13
 
 [taxonomies]
 difficulty = ["intermediate"]

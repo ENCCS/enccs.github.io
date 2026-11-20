@@ -1,6 +1,7 @@
 +++
 title = "Python for high performance computing"
 description = "This course will teach you how to use Python for high performance computing tasks, including parallel programming and accelerator offloading."
+date = 2025-11-10
 
 [taxonomies]
 difficulty = ["intermediate"]

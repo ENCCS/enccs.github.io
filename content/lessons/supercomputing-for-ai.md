@@ -1,6 +1,7 @@
 +++
 title = "Supercomputing for AI"
 description = "High performance computing (HPC) resources can be used to accelerate AI workflows. The EuroHPC Joint Undertaking (JU) offers free access to such resources to SMEs as well as larger companies. This lessons will introduce you to these workflows."
+date = 2024-08-27
 
 [taxonomies]
 difficulty = ["beginner"]

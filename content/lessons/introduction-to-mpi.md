@@ -1,6 +1,7 @@
 +++
 title = "Introduction to MPI"
 description = "As processors develop, it’s getting harder to increase their clock speed. Instead, new processors tend to have more processing units. To take advantage of the increased resources, programs need to be written to run in parallel. MPI is one of the most common frameworks to solve this problem."
+date = 2019-11-06
 
 [taxonomies]
 difficulty = ["beginner"]

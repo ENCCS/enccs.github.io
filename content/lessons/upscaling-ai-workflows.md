@@ -1,6 +1,7 @@
 +++
 title = "Upscaling AI workflows"
 description = " This workshop teaches us how to scale an AI-powered application in large clusters, i.e., supercomputers."
+date = 2022-04-21
 
 [taxonomies]
 difficulty = ["beginner"]

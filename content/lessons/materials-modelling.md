@@ -1,6 +1,7 @@
 +++
 title = "Efficient materials modelling on HPC with Quantum ESPRESSO, Yambo and BigDFT"
 description = "This training material gives a broad overview of important fundamental concepts for molecular and materials modelling on HPC, with a focus on three of the most modern codes for electronic structure calculations (QUANTUM ESPRESSO, Yambo and BigDFT)."
+date = 2022-12-01
 
 [taxonomies]
 difficulty = ["intermediate"]

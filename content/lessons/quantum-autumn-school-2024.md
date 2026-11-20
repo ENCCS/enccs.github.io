@@ -1,6 +1,7 @@
 +++
 title = "Quantum Autumn School 2024"
 description = "A three-day quantum autumn school delivered by ENCCS with NordIQuEst in December 2024, with contributions from several companies developing in-house expertise in application domains of quantum computing."
+date = 2024-08-27
 
 [taxonomies]
 difficulty = ["intermediate"]

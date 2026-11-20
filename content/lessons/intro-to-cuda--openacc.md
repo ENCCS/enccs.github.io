@@ -1,6 +1,7 @@
 +++
 title = "Intro to CUDA & OpenACC"
 description = "This lesson is an introduction to GPU programming using the directive-based OpenACC paradigm and language-extension-based CUDA. The course consists of lectures, type-along and hands-on exercises. Topics covered include the architecture of the GPU accelerators, basic usage of OpenACC and CUDA, and how to control data movement between CPUs and GPUs. Basic optimization of the code will also be covered."
+date = 2021-03-16
 
 [taxonomies]
 difficulty = ["beginner"]

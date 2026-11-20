@@ -1,6 +1,7 @@
 +++
 title = "EMTO Best practices"
 description = "This lesson will teach you how to effectively use EMTO for material science!"
+date = 2024-01-19
 
 [taxonomies]
 difficulty = ["intermediate"]

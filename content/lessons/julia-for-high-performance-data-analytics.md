@@ -5,7 +5,7 @@ description = "Julia has a rich ecosystem of libraries aimed towards scientific 
 [taxonomies]
 difficulty = ["advanced"]
 maturity = ["stable"]
-category = ["high-level-language-programming", "ai"]
+category = ["high_level_language_programming", "ai"]
 
 [extra]
 tags = []

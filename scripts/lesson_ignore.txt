@@ -1,0 +1,16 @@
+# ENCCS GitHub Pages sites that are not cards in the library, one repository name per line.
+# find_new_lessons.py leaves these out. Delete a line when the reason no longer holds.
+# Archived repositories are left out anyway.
+
+enccs.github.io                     # this library itself
+sphinx-lesson-template              # template for new lessons
+pqc-template                        # placeholder site with no content
+evita-material-template             # only redirects to another repository
+evita-module-demo                   # demo of an EVITA module, same material as hpda-python
+eurohpc-qdevices                    # manual of the qdevices tool; its lesson eurohpc-quantum-devices-access-hpcqc has a card
+hpda-python                         # older material on the same subject; the HPDA card opens python-for-hpda
+port-to-lumi                        # one-page explorer written before the LUMI GPU partition opened
+HIP101                              # episodes hold only headings and placeholders
+bootcamp-data-analysis              # unfinished: two shell episodes, no data analysis yet; delete this line when it has them
+contemporary-nlp                    # unfinished since 2022, its data link is broken; delete this line if it is completed
+ju-systems-applications-procedures  # unfinished and out of date (2021, PRACE era)

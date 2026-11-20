@@ -1,6 +1,6 @@
 +++
 title = "Extra Unix Shell Material"
-description = "Extra Unix Shell Material"
+description = "Short topical lessons on particular shell features that are useful to researchers, supplementing Software Carpentry's Introduction to the Unix Shell."
 
 [taxonomies]
 difficulty = ["intermediate"]

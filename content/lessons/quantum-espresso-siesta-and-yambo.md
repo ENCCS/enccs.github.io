@@ -5,7 +5,7 @@ description = "This lesson will show you how to run VASP efficiently on supercom
 [taxonomies]
 difficulty = ["intermediate"]
 maturity = ["stable"]
-category = ["electronic-structure-calculations"]
+category = ["electronic_structure_calculations"]
 
 [extra]
 tags = []

@@ -1,5 +1,5 @@
 +++
-title = "High Performance Data Analytics in Python"
+title = "Python for High Performance Data Analytics"
 description = "This lesson provides a broad overview of methods to work with large datasets using tools and libraries from the Python ecosystem. Since this field is fairly extensive, we will try to expose just enough details on each topic for you to get a good idea of the picture and an understanding of what combination of tools and libraries will work well for your particular use case."
 
 [taxonomies]
@@ -18,4 +18,4 @@ Both for classical machine/deep learning and (generative) AI, the amount of data
 
 ## Learn More
 
-Visit the [lesson page](https://enccs.github.io/hpda-python/) to access the full content.
+Visit the [lesson page](https://enccs.github.io/python-for-hpda) to access the full content.

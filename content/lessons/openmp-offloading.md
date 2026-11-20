@@ -5,7 +5,7 @@ description = "This course is intended for newcomers to OpenMP GPU offloading. B
 [taxonomies]
 difficulty = ["beginner"]
 maturity = ["stable"]
-category = ["gpu-programming"]
+category = ["gpu_programming"]
 
 [extra]
 tags = []

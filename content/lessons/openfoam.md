@@ -4,7 +4,7 @@ description = "This lesson material covers the basics of OpenFOAM, a widely used
 
 [taxonomies]
 difficulty = ["intermediate"]
-maturity = ["alpha"]
+maturity = ["stable"]
 category = ["computational_fluid_dynamics"]
 
 [extra]

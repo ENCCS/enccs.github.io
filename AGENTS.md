@@ -1,6 +1,6 @@
-# Mimer AI Lessons Site - Project Guide
+# ENCCS Lesson Library - Project Guide
 
-This is a static site built with [Zola](https://www.getzola.org/), a fast static site generator written in Rust. The site showcases AI learning materials with filtering, search, and external lesson links.
+This is a static site built with [Zola](https://www.getzola.org/), a fast static site generator written in Rust. The site showcases ENCCS lesson materials with filtering, search, and external lesson links.
 
 ## Project Structure
 
@@ -38,8 +38,8 @@ Download the latest release for your platform from [Zola Releases](https://githu
 
 ```bash
 # For Linux x86_64
-wget https://github.com/getzola/zola/releases/download/v0.22.1/zola-v0.22.1-x86_64-unknown-linux-gnu.tar.gz
-mkdir -p /tmp/zola && tar -xzf zola-v0.22.1-x86_64-unknown-linux-gnu.tar.gz -C /tmp/zola
+wget https://github.com/getzola/zola/releases/download/v0.23.6/zola-v0.23.6-x86_64-unknown-linux-gnu.tar.gz
+mkdir -p /tmp/zola && tar -xzf zola-v0.23.6-x86_64-unknown-linux-gnu.tar.gz -C /tmp/zola
 # Add to PATH
 export PATH="/tmp/zola:$PATH"
 ```
@@ -110,7 +110,7 @@ maturity = ["stable"]
 
 [extra]
 tags = ["python", "machine-learning"]
-external_url = "https://learn.mimer-ai.eu/lesson-slug/"
+external_url = "https://enccs.github.io/lesson-slug/"
 +++
 
 # Lesson content in Markdown
@@ -205,6 +205,14 @@ Edit `zola.toml` to modify:
 - `[extra]`: Custom variables (badge colors, etc.)
 - `[markdown]`: Markdown rendering options
 - `[search]`: Search index format
+
+## Keeping the library complete
+
+- `scripts/find_new_lessons.py` lists the public ENCCS repositories with a GitHub Pages site that no card links to and that `scripts/lesson_ignore.txt` does not name; `--write-drafts` writes draft cards (`draft = true`, left out of the site until reviewed).
+- `.github/workflows/new-lessons.yml` runs it every Monday and opens (or updates) one pull request, "New lesson sites found", with those drafts.
+- `scripts/check_cards.py` checks every card: categories must be keys of `[extra.badge_colors.category]` in `zola.toml`, written with underscores; the description is not empty and does not repeat the title; no two cards share an `external_url`; the "lesson page" link in the text is the `external_url`. `--links` also opens every link. Run it before every commit.
+- Write titles and descriptions only from each lesson's own text. Never rename a card file: its name is its address.
+- Maturity: `stable` once the event the material was made for has been held, even if its site is unfinished; otherwise `beta` (complete, not yet taught) or `alpha` (work in progress).
 
 ## Deployment
 

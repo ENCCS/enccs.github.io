@@ -9,7 +9,7 @@ category = ["molecular_dynamics"]
 
 [extra]
 tags = []
-external_url = "https://enccs.github.io/veloxchem-workshop/"
+external_url = "https://enccs.github.io/gromacs-gpu-performance/"
 +++
 
 ## Overview

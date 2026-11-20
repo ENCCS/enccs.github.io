@@ -5,7 +5,7 @@ description = "This lesson covers the basics of Julia: its syntax, multiple-disp
 [taxonomies]
 difficulty = ["advanced"]
 maturity = ["stable"]
-category = ["high-level-language-programming"]
+category = ["high_level_language_programming"]
 
 [extra]
 tags = []

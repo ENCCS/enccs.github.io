@@ -1,7 +1,7 @@
 {
-  "name": "mimer-ai-site",
+  "name": "enccs-lesson-library",
   "version": "1.0.0",
-  "description": "Mimer AI Factory lessons site",
+  "description": "ENCCS Lesson Library",
   "type": "module",
   "scripts": {
     "build": "tailwindcss -i ./css/main.css -o ./static/css/main.dist.css --minify",

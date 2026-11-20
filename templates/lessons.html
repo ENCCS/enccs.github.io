@@ -61,6 +61,7 @@
             class="bg-white border border-gray-200 rounded-xl p-6 group-hover:border-[#FFC107] group-hover:shadow-lg group-hover:shadow-[#FFC107]/20 transition-all duration-200 h-full"
             data-title="{{ page.title }}"
             data-description="{{ page.description | default(value="") }}"
+            data-url="{{ page.extra.external_url | default(value="") }}"
         >
             <h2 class="text-xl font-semibold text-[#2A2B31] mb-3 group-hover:text-[#FFC107] transition-colors">{{ page.title }}</h2>
             <p class="text-gray-600 mb-4">{{ page.description | default(value="No description available") }}</p>
@@ -110,18 +111,19 @@ function filterLessons() {
             }
         }
 
-        // Check text search - simple string matching on title and description
+        // Text search over everything on the card (title, description, category and level labels)
+        // and the lesson address. Every word typed must match, in any order: words of three or more
+        // letters anywhere ("torch" finds PyTorch), shorter ones only at the start of a word ("ai")
         if (searchQuery) {
-            const title = lesson.getAttribute('data-title').toLowerCase();
-            const description = lesson.getAttribute('data-description').toLowerCase();
-            searchMatch = title.includes(searchQuery) || description.includes(searchQuery);
+            const text = (lesson.textContent + ' ' + (lesson.getAttribute('data-url') || '')).toLowerCase();
+            const words = text.split(/[^\p{L}\p{N}]+/u);
+            searchMatch = searchQuery.split(/[^\p{L}\p{N}]+/u).filter(Boolean)
+                .every(q => q.length >= 3 ? text.includes(q) : words.some(w => w.startsWith(q)));
         }
 
-        if (categoryMatch && difficultyMatch && maturityMatch && searchMatch) {
-            lesson.style.display = '';
-        } else {
-            lesson.style.display = 'none';
-        }
+        // Hide the whole grid cell (the link around the card), not only the card, so no gaps are left
+        const cell = lesson.closest('a') || lesson;
+        cell.style.display = (categoryMatch && difficultyMatch && maturityMatch && searchMatch) ? '' : 'none';
     });
 }
 

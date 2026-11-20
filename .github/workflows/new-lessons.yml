@@ -1,0 +1,62 @@
+name: Find new lessons
+
+# Every Monday, look for ENCCS GitHub Pages sites that are not in the Lesson Library
+# and open (or update) one pull request with draft cards for a person to review.
+# Draft cards are not published; merging the pull request only adds them as drafts.
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: "new-lessons"
+  cancel-in-progress: true
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v6.0.1
+
+      - name: Continue the open pull request, if there is one
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Drafts already in an open pull request (perhaps edited by a reviewer) count as known
+          if [ -n "$(gh pr list --head new-lessons --state open --json number --jq '.[].number')" ]; then
+            git fetch origin new-lessons
+            git switch -c new-lessons --track origin/new-lessons
+            echo "PR_OPEN=1" >> "$GITHUB_ENV"
+          else
+            git switch -c new-lessons
+          fi
+
+      - name: Write draft cards for new lesson sites
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/find_new_lessons.py --write-drafts
+
+      - name: Open or update the pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain content/lessons)" ]; then
+            echo "No new lesson sites."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/lessons
+          git commit -m "Draft cards for new lesson sites"
+          # Never overwrite an open pull request; a branch left from a closed one may be replaced
+          if [ "${PR_OPEN:-0}" = 1 ]; then git push origin new-lessons; else git push --force origin new-lessons; fi
+          if [ -z "$(gh pr list --head new-lessons --state open --json number --jq '.[].number')" ]; then
+            gh pr create --head new-lessons --base main \
+              --title "New lesson sites found" \
+              --body "Draft cards written by scripts/find_new_lessons.py. For each card: check the title and description against the lesson, set category, difficulty and maturity, and delete the draft line to publish it, or add the repository to scripts/lesson_ignore.txt and delete the card."
+          fi

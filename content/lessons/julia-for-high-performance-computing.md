@@ -5,7 +5,7 @@ description = "This lesson goes through various approaches for writing performan
 [taxonomies]
 difficulty = ["advanced"]
 maturity = ["stable"]
-category = ["high-level-language-programming", "gpu_programming", "cpu_programming"]
+category = ["high_level_language_programming", "gpu_programming", "cpu_programming"]
 
 [extra]
 tags = []
@@ -18,4 +18,4 @@ This material is aimed at researchers and developers who want to learn a modern,
 
 ## Learn More
 
-Visit the [lesson page](https://enccs.github.io/julia-intro/) to access the full content.
+Visit the [lesson page](https://enccs.github.io/julia-for-hpc/) to access the full content.

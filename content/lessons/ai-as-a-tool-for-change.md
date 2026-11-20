@@ -1,6 +1,6 @@
 +++
 title = "AI as a tool for change"
-description = "AI as a tool for change"
+description = "A half-day beginner's course by ENCCS and RISE: what is artificial intelligence, which problems can be solved with such techniques, and how can they be used within an organisation?"
 
 [taxonomies]
 difficulty = ["beginner"]
@@ -18,4 +18,4 @@ AI as a tool for change lesson material from ENCCS.
 
 ## Learn More
 
-Visit the [lesson page](https://www.youtube.com/watch?v=FMnopQNF3M) to access the full content.
+Visit the [lesson page](https://www.youtube.com/watch?v=_FMnopQNF3M) to access the full content.

@@ -5,7 +5,7 @@ description = "This course will teach you how to use Python for high performance
 [taxonomies]
 difficulty = ["intermediate"]
 maturity = ["stable"]
-category = ["high-level-language-programming"]
+category = ["high_level_language_programming"]
 
 [extra]
 tags = []

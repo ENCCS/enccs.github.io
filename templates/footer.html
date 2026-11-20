@@ -1,7 +1,7 @@
 <footer class="bg-[#2A2B31] text-white">
     <div class="container mx-auto px-4 py-12">
         {# Top row with logo and links #}
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             {# Logo #}
             <div class="flex justify-center md:justify-start">
                 <img
@@ -10,105 +10,71 @@
                     class="h-48 w-auto max-w-xs"
                 />
             </div>
-            
+
             {# Navigation links #}
             <div class="flex flex-col space-y-4">
                 <a href="https://enccs.se/events" class="text-white hover:text-[#FFC107] transition-colors">Events and learning</a>
                 <a href="https://enccs.se/how-we-help/" class="text-white hover:text-[#FFC107] transition-colors">How we help</a>
             </div>
-            
+
             {# Contact info #}
             <div>
                 <h4 class="font-semibold mb-4">Contact Info</h4>
                 <a href="mailto:info@enccs.se" class="text-white hover:text-[#FFC107] transition-colors">info@enccs.se</a>
+                <a href="https://www.linkedin.com/company/enccs" aria-label="ENCCS on LinkedIn" class="mt-6 block w-fit text-[#E5E7EB] hover:text-[#FFC107] transition-colors">
+                    <svg class="h-10 w-10" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                </a>
             </div>
         </div>
-        
-        {# Divider #}
-        <hr class="border-t border-white/20 my-8" />
-        
-        {# Funding logos row #}
-        <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 mb-12">
-            <img
-                src="https://media.enccs.se/2026/07/Co-funded-by-the-EU_RGB_POS-300x67.png"
-                alt="Co-funded by the European Union"
-                class="h-12 md:h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-            <img
-                src="https://media.enccs.se/2026/07/EuroHPC-JU-logo-300x82.png"
-                alt="EuroHPC Joint Undertaking"
-                class="h-14 md:h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-            <img
-                src="https://media.enccs.se/2026/07/Logo_HPC-in-Europe_all-white-300x200.png"
-                alt="HPC in Europe"
-                class="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-            <img
-                src="https://media.enccs.se/2026/07/EuroCC3-Logo_white-300x300.png"
-                alt="EuroCC3"
-                class="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-            <img
-                src="https://media.enccs.se/2026/07/rise_logo_svart-234x300.png"
-                alt="RISE Research Institutes of Sweden"
-                class="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-            <img
-                src="https://media.enccs.se/2026/07/LiU_primary_white-300x108.png"
-                alt="Linköping University"
-                class="h-12 md:h-14 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-            <img
-                src="https://media.enccs.se/2026/07/Vetenskapsradet-300x141.png"
-                alt="Vetenskapsrådet - Swedish Research Council"
-                class="h-14 md:h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-            <img
-                src="https://media.enccs.se/2026/07/Vinnova_green-300x64.png"
-                alt="Vinnova - Sweden's Innovation Agency"
-                class="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-        </div>
-        
-        {# Divider #}
-        <hr class="border-t border-white/20 my-8" />
-        
-        {# Funding text #}
-        <div class="text-center text-sm text-white/80 space-y-4">
-            <p>
-                ENCCS is the Swedish node of the EuroCC3 project.
-            </p>
-            <p>
-                EuroCC 3 has received funding from the 
-                <a href="https://eurohpc-ju.europa.eu/index_en" class="text-white hover:text-[#FFC107] underline">
-                    European High-Performance Computing Joint Undertaking (JU)
-                </a> 
-                under Grant Agreement No. 101306701. The JU receives support from the 
-                <a href="https://european-union.europa.eu/" class="text-white hover:text-[#FFC107] underline">
-                    European Union
-                </a>
-                's Digital Europe Programme and Germany, Albania, Austria, Belgium, Bosnia and Herzegovina, 
-                Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Greece, Hungary, 
-                Iceland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Montenegro, the Netherlands, 
-                North Macedonia, Norway, Poland, Portugal, Romania, Serbia, Slovakia, Slovenia, Spain, 
-                Sweden, Türkiye, and Kosovo.
-            </p>
-            <p>
-                Funded by the European Union. Views and opinions expressed are however those of the 
-                author(s) only and do not necessarily reflect those of the European Union or EuroHPC 
-                Joint Undertaking. Neither the European Union nor the EuroHPC Joint Undertaking can be 
-                held responsible for them.
-            </p>
-            <p>
-                ENCCS has also received national funding through Vinnova and the Swedish Research Council (VR)
-            </p>
-            <p>
-                <a href="https://hpc-portal.eu/" class="text-white hover:text-[#FFC107] underline">
-                    HPC in Europe
-                </a> 
-                is the umbrella brand uniting Europe's high-performance computing initiatives across 36+ countries.
-            </p>
+    </div>
+
+    {# Funding, as in the ENCCS Sphinx lessons: EU emblem, funding text, then the EuroCC 3, host and national funder logos #}
+    <div class="bg-white text-[#2A2B31]">
+        <div class="container mx-auto px-4 py-10">
+            <a href="https://european-union.europa.eu/index_en" aria-label="European Union" class="inline-block">
+                <img
+                    src="/logos/eu/EN_Co-fundedbytheEU_RGB_POS.png"
+                    alt="Co-funded by the European Union"
+                    class="h-[60px] md:h-[90px] w-auto"
+                />
+            </a>
+
+            <div class="mt-6 text-sm text-[#2A2B31]/80 space-y-3 max-w-5xl">
+                <p>ENCCS is the Swedish node of the EuroCC 3 project.</p>
+                <p>
+                    EuroCC 3 has received funding from the
+                    <a href="https://eurohpc-ju.europa.eu/index_en" class="underline hover:text-[#2A2B31]">European High-Performance Computing Joint Undertaking (JU)</a>
+                    under Grant Agreement No. 101306701. The JU receives support from the
+                    <a href="https://european-union.europa.eu/index_en" class="underline hover:text-[#2A2B31]">European Union</a>'s
+                    Digital Europe Programme and Germany, Albania, Austria, Belgium, Bosnia and Herzegovina,
+                    Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Greece, Hungary,
+                    Iceland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Montenegro, the Netherlands,
+                    North Macedonia, Norway, Poland, Portugal, Romania, Serbia, Slovakia, Slovenia, Spain,
+                    Sweden, Türkiye, and Kosovo.
+                </p>
+                <p>
+                    Funded by the European Union. Views and opinions expressed are however those of the
+                    author(s) only and do not necessarily reflect those of the European Union or EuroHPC
+                    Joint Undertaking. Neither the European Union nor the EuroHPC Joint Undertaking can be
+                    held responsible for them.
+                </p>
+                <p>ENCCS has also received national funding through Vinnova and the Swedish Research Council (VR).</p>
+                <p>
+                    <a href="https://hpc-portal.eu/" class="underline hover:text-[#2A2B31]">HPC in Europe</a>
+                    is the umbrella brand uniting Europe's high-performance computing initiatives across 36+ countries.
+                    The project is supported by the European High-Performance Computing Joint Undertaking and its members.
+                </p>
+            </div>
+
+            <div class="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4">
+                <a href="https://www.eurohpc-ju.europa.eu/index_en"><img src="/logos/cc3/eurohpc.svg" alt="EuroHPC Joint Undertaking" class="h-[30px] w-auto"></a>
+                <a href="https://hpc-portal.eu/"><img src="/logos/cc3/hpc-in-europe.svg" alt="HPC in Europe" class="h-9 w-auto"></a>
+                <a href="https://hpc-portal.eu/projects/eurocc-3-national-competence-centres-in-the-framework-eurohpc"><img src="/logos/cc3/eurocc3.svg" alt="EuroCC 3" class="h-9 w-auto"></a>
+                <a href="https://liu.se/en"><img src="/logos/partners/liu.svg" alt="Linköping University" class="h-[27px] w-auto"></a>
+                <a href="https://www.ri.se/en"><img src="/logos/partners/rise.svg" alt="RISE Research Institutes of Sweden" class="h-9 w-auto"></a>
+                <a href="https://www.vr.se/english.html"><img src="/logos/national/vr.svg" alt="Swedish Research Council" class="h-9 w-auto"></a>
+                <a href="https://www.vinnova.se/en/"><img src="/logos/national/vinnova.svg" alt="Vinnova" class="h-[25px] w-auto"></a>
+            </div>
         </div>
     </div>
 </footer>

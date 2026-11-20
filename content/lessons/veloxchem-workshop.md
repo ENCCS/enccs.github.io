@@ -1,6 +1,6 @@
 +++
 title = "VeloxChem: quantum chemistry from laptop to HPC"
-description = "GROMACS Umbrella Sampling"
+description = "Learn how to use the VeloxChem program package to perform quantum chemical simulations of ground- and excited-state properties of large systems, leverage modern HPC clusters, and prototype new methods with its Python API."
 
 [taxonomies]
 difficulty = ["advanced"]
@@ -9,7 +9,7 @@ category = ["electronic_structure_calculations"]
 
 [extra]
 tags = []
-external_url = "https://enccs.github.io/veloxchem-hpc/"
+external_url = "https://enccs.github.io/veloxchem-workshop/"
 +++
 
 ## Overview
@@ -22,4 +22,4 @@ This lesson is for researchers and students already familiar with quantum chemis
 
 ## Learn More
 
-Visit the [lesson page](https://enccs.github.io/veloxchem-hpc/) to access the full content.
+Visit the [lesson page](https://enccs.github.io/veloxchem-workshop/) to access the full content.
